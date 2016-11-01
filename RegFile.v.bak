@@ -1,0 +1,2 @@
+module RegFile(src1_sel, src2_sel, wr_sel, data_in, wr_en, clk, src1_out, src2_out);
+endmodule
