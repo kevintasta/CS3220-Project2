@@ -5,6 +5,7 @@ module Project2(SW,KEY,LEDR,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   output [9:0] LEDR;
   output [6:0] HEX0,HEX1,HEX2,HEX3;
  
+  parameter width = 32, aluop_width = 5, imm_width = 16;
   parameter DBITS         				 = 32;
   parameter INST_SIZE      			 = 32'd4;
   parameter INST_BIT_WIDTH				 = 32;
@@ -50,14 +51,78 @@ module Project2(SW,KEY,LEDR,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   wire[IMEM_DATA_BIT_WIDTH - 1: 0] instWord;
   InstMemory #(IMEM_INIT_FILE, IMEM_ADDR_BIT_WIDTH, IMEM_DATA_BIT_WIDTH) instMem (pcOut[IMEM_PC_BITS_HI - 1: IMEM_PC_BITS_LO], instWord);
   
+  // Define all wires here
+  // PC Mux wires
+  wire[DBITS - 1:0] pcmux_out;
+
+  // PC increment adder wires
+  wire[DBITS - 1:0] pcadder_out;
+
+  // Branch picker wires
+  wire[DBITS - 1:0] brpick_out;
+
+  // Branch adder wires
+  wire[DBITS - 1:0] bradder_out;
+
+  // Shifter wires
+  wire[DBITS - 1:0] shift_out;
+
+  // Register data in mux wires
+  wire[DBITS - 1:0] regmux_out;
+
+  // Sext wires
+  wire[DBITS - 1:0] sext_out;
+
+  // Alu mux wires
+  wire[DBITS - 1:0] alumux_out;
+  
+  // Register file wires
+  wire[DBITS - 1:0] regfile_src1_out, regfile_src2_out;
+  
+  // ALU wires
+  wire[DBITS - 1:0] alu_out;
+  wire alu_compare;
+
+  //Data memory wires
+  wire[DBITS - 1:0] d_out;
+
   // Put the code for getting opcode1, rd, rs, rt, imm, etc. here 
   
+	wire[3:0] src1_sel, src2_sel, wr_sel;
+	wire[aluop_width - 1:0] alu_op;
+	wire[1:0] pc_mux_sel, reg_data_in_mux, alu_src2_sel;
+	wire reg_wr_en, data_wr_en;
+	wire[imm_width - 1:0] imm;
+
+  Controller control(instWord, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel, reg_data_in_mux, alu_src2_sel, alu_op, reg_wr_en, data_wr_en);
+
+  // Create all of the multiplexers
+  Multiplexer alumux(regfile_src2_out, sext_out, shift_out, alu_src2_sel, alumux_out);
+  Multiplexer regmux(alu_out, d_out, pcadder_out, reg_data_in_mux, regmux_out);
+  Multiplexer pcmux(pcadder_out, brpick_out, alu_out, pc_mux_sel, pcIn);
+
+  // Create all of the adders
+  Adder pcadder(pcadder_src1, pcOut, pcadder_out);
+  Adder bradder(shift_out, pcadder_out, bradder_out);
+
+  // Create the branch picker
+  BranchPicker brpick(pcadder_out, bradder_out, alu_compare, brpick_out);
+
+  // Create the left shift_in
+  LeftShift lshift(sext_out, shift_out);
+
+  // Create the sign extender
+  SignExtension sext(imm, sext_out);
+
   // Create the registers
+  RegFile registerFile(src1_sel, src2_sel, wr_sel, regmux_out, reg_wr_en, clk, regfile_src1_out, regfile_src2_out);
   
   // Create ALU unit
-  
+  ALU mainALU(regfile_src1_out, regmux_out, alu_op, alu_out, alu_compare);
+
   // Put the code for data memory and I/O here
-  
+  // DataMemory datamem(clk, data_wr_en, alu_out, regfile_src2_out, , key, ledr, hex, dOut);
+
   // KEYS, SWITCHES, HEXS, and LEDS are memeory mapped IO
     
 endmodule
