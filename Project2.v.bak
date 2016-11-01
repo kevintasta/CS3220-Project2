@@ -121,12 +121,8 @@ module Project2(SW,KEY,LEDR,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   ALU mainALU(regfile_src1_out, regmux_out, alu_op, alu_out, alu_compare);
 
   // Put the code for data memory and I/O here
-  wire[15:0] hex;
-  DataMemory(clk, data_wr_en, alu_out, regfile_src2_out, SW, KEY, LEDR, hex, d_out);
-  assign HEX0 = hex[3:0];
-  assign HEX1 = hex[7:4];
-  assign HEX2 = hex[11:8];
-  assign HEX3 = hex[15:12];
+  // DataMemory datamem(clk, data_wr_en, alu_out, regfile_src2_out, , key, ledr, hex, dOut);
+
   // KEYS, SWITCHES, HEXS, and LEDS are memeory mapped IO
     
 endmodule

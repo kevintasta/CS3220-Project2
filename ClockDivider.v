@@ -13,6 +13,17 @@ module ClockDivider (
   parameter count = 25000000;
   parameter width = 32;
   reg[width - 1: 0] counter = 0;
-  
+  parameter divider = 25000000;
+  reg clkCount = 0;
+  assign clkOut = clkCount;
+  always @(posedge inclk0) begin
+		if (locked == 1'b0) begin
+			counter <= counter + 1;
+		end
+		if (counter == divider) begin
+			clkCount <= ~clkCount;
+			counter <= 0;
+		end
+	end
 
 endmodule
