@@ -10,9 +10,6 @@ module ClockDivider (
   // Implement this yourself
   // Slow down the clock to ensure the cycle is long enough for all operations to execute
   // If you don't, you might get weird errors
-  parameter count = 25000000;
-  parameter width = 32;
-  reg[width - 1: 0] counter = 0;
   
 
 endmodule
