@@ -213,6 +213,166 @@ module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel,
 					end
 				endcase
 			end
+			
+			//cmp-1
+			4'b0101: begin
+				pc_mux_sel = 2'b00;
+				reg_data_in_mux = 2'b00;
+				reg_wr_en = 1'b1;
+				alu_src2_sel = 2'b01;
+				data_wr_en = 1'b0;
+				imm = instr[15:0];
+				
+				//Sets registers
+				wr_sel = instr[23:20];
+				src1_sel = instr[19:16];
+				src2_sel = instr[15:12];
+				
+				case(instr[27:23]) begin
+					//FI
+					4'b0011: begin
+						alu_op = F;
+					end
+					//EQI
+					4'b0110: begin
+						alu_op = EQ;
+					end
+					//LTI
+					4'1001: begin
+						alu_op = LT;
+					end
+					//LTEI
+					4'b1100: begin
+						alu_op = LTE;
+					end
+					//TI
+					4'b0000: begin
+						alu_op = T;
+					end
+					//NEI
+					4'b0101: begin
+						alu_op = NE;
+					end
+					//GTEI
+					4'b1010: begin
+						alu_op = GTE;
+					end
+					//GTI
+					4'b1111: begin
+						alu_op = GT;
+					end
+					default: begin
+						alu_op = ADD;
+					end
+				endcase
+			end
+			
+			//branch
+			4'b0010: begin
+				pc_mux_sel = 2'b01;
+				reg_data_in_mux = 2'b00;
+				reg_wr_en = 1'b0;
+				alu_src2_sel = 2'b00;
+				data_wr_en = 1'b0;
+				imm = instr[15:0];
+				
+				//Sets registers
+				wr_sel = 4'b0000;
+				src1_sel = instr[23:20];
+				src2_sel = instr[19:16];
+				
+				case(instr[27:23]) begin
+					//BF
+					4'b0011: begin
+						alu_op = F;
+					end
+					//BEQ
+					4'b0110: begin
+						alu_op = EQ;
+					end
+					//BLT
+					4'1001: begin
+						alu_op = LT;
+					end
+					//BLTE
+					4'b1100: begin
+						alu_op = LTE;
+					end
+					//BEQZ
+					4'b0010: begin
+						alu_op = BEQZ;
+					end
+					//BLTZ
+					4'b0010: begin
+						alu_op = BLTZ;
+					end
+					//BLTEZ
+					4'b1000: begin
+						alu_op = BLTEZ;
+					end
+					//BT
+					4'b0000: begin
+						alu_op = T;
+					end
+					//BNE
+					4'b0101: begin
+						alu_op = NE;
+					end
+					//BGTE
+					4'b1010: begin
+						alu_op = GTE;
+					end
+					//BGT
+					4'b1011: begin
+						alu_op = GT;
+					end
+					//BNEZ
+					4'b0001: begin
+						alu_op = BNEZ;
+					end
+					//BGTEZ
+					4'b1110: begin
+						alu_op = BGTEZ;
+					end
+					//BGTZ
+					4'b1111: begin
+						alu_op = BGTZ;
+					end
+					default: begin
+						alu_op = ADD;
+					end
+				endcase
+			end
+			
+			//jal
+			4'b0110: begin
+				pc_mux_sel = 2'b10;
+				reg_data_in_mux = 2'b10;
+				reg_wr_en = 1'b1;
+				alu_src2_sel = 2'b10;
+				data_wr_en = 1'b0;
+				imm = instr[15:0];
+				alu_op = ADD;
+				
+				//Sets registers
+				wr_sel = instr[23:20];
+				src1_sel = instr[19:16];
+				src2_sel = 4'b0000;
+			end
+			
+			default:
+				pc_mux_sel = 2'b00;
+				reg_data_in_mux = 2'b00;
+				reg_wr_en = 1'b0;
+				alu_src2_sel = 2'b00;
+				data_wr_en = 1'b0;
+				imm = 16'd0;
+				alu_op = ADD;
+				
+				//Sets registers
+				wr_sel = 4'b0000;
+				src1_sel = 4'b0000;
+				src2_sel = 4'b0000;
 		endcase
 	end
 endmodule
