@@ -31,7 +31,7 @@ module Controller(instr, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel, reg_data_i
 				src2_sel = instr[15:12];
 				
 				
-				case(instr[27:23])
+				case(instr[27:24])
 					//ADD
 					4'b0111: begin
 						alu_op = ADD;
@@ -84,7 +84,7 @@ module Controller(instr, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel, reg_data_i
 				src1_sel = instr[19:16];
 				src2_sel = instr[15:12];
 				
-				case(instr[27:23])
+				case(instr[27:24])
 					//F
 					4'b0011: begin
 						alu_op = F;
@@ -170,7 +170,7 @@ module Controller(instr, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel, reg_data_i
 				src2_sel = 4'b0000;
 				
 				
-				case(instr[27:23])
+				case(instr[27:24])
 					//ADDI
 					4'b0111: begin
 						alu_op = ADD;
@@ -227,7 +227,7 @@ module Controller(instr, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel, reg_data_i
 				src1_sel = instr[19:16];
 				src2_sel = instr[15:12];
 				
-				case(instr[27:23])
+				case(instr[27:24])
 					//FI
 					4'b0011: begin
 						alu_op = F;
@@ -280,7 +280,7 @@ module Controller(instr, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel, reg_data_i
 				src1_sel = instr[23:20];
 				src2_sel = instr[19:16];
 				
-				case(instr[27:23])
+				case(instr[27:24])
 					//BF
 					4'b0011: begin
 						alu_op = F;
