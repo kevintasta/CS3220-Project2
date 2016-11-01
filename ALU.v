@@ -37,7 +37,7 @@ module ALU(in1, in2, control, out, compare);
 				calc = ~(in1 ^ in2);
 			end
 			MVHI: begin
-				calc = ((in1 & 32'h0000FFFF) << 16);
+				calc = ((in2 & 32'h0000FFFF) << 16);
 			end
 			F: begin
 				calc = 32'd0;
