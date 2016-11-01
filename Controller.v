@@ -1,4 +1,4 @@
-module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel, reg_data_in_mux, alu_src2_sel, alu_op, reg_wr_en, data_wr_en);
+module Controller(instr, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel, reg_data_in_mux, alu_src2_sel, alu_op, reg_wr_en, data_wr_en);
 	//ALU opcodes
 	parameter ADD = 5'b00000, SUB = 5'b00001, AND = 5'b00010, OR = 5'b00011, XOR = 5'b00100, NAND = 5'b00101, NOR = 5'b00110, XNOR = 5'b00111;
 	parameter MVHI = 5'b01000, F = 5'b01001, EQ = 5'b01010, LT = 5'b01011, LTE = 5'b01100, T = 5'b01101, NE = 5'b01110, GTE = 5'b01111, GT = 5'b10000;
@@ -8,7 +8,6 @@ module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel,
 	
 	parameter width = 32, aluop_width = 5, imm_width = 16;
 	input[width - 1:0]instr;
-	input cond_flag;
 	output reg [3:0] src1_sel, src2_sel, wr_sel;
 	output reg [aluop_width - 1:0] alu_op;
 	output reg [1:0] pc_mux_sel, reg_data_in_mux, alu_src2_sel;
@@ -32,7 +31,7 @@ module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel,
 				src2_sel = instr[15:12];
 				
 				
-				case(instr[27:23]) begin
+				case(instr[27:23])
 					//ADD
 					4'b0111: begin
 						alu_op = ADD;
@@ -85,7 +84,7 @@ module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel,
 				src1_sel = instr[19:16];
 				src2_sel = instr[15:12];
 				
-				case(instr[27:23]) begin
+				case(instr[27:23])
 					//F
 					4'b0011: begin
 						alu_op = F;
@@ -95,7 +94,7 @@ module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel,
 						alu_op = EQ;
 					end
 					//LT
-					4'1001: begin
+					4'b1001: begin
 						alu_op = LT;
 					end
 					//LTE
@@ -171,7 +170,7 @@ module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel,
 				src2_sel = 4'b0000;
 				
 				
-				case(instr[27:23]) begin
+				case(instr[27:23])
 					//ADDI
 					4'b0111: begin
 						alu_op = ADD;
@@ -228,7 +227,7 @@ module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel,
 				src1_sel = instr[19:16];
 				src2_sel = instr[15:12];
 				
-				case(instr[27:23]) begin
+				case(instr[27:23])
 					//FI
 					4'b0011: begin
 						alu_op = F;
@@ -238,7 +237,7 @@ module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel,
 						alu_op = EQ;
 					end
 					//LTI
-					4'1001: begin
+					4'b1001: begin
 						alu_op = LT;
 					end
 					//LTEI
@@ -281,7 +280,7 @@ module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel,
 				src1_sel = instr[23:20];
 				src2_sel = instr[19:16];
 				
-				case(instr[27:23]) begin
+				case(instr[27:23])
 					//BF
 					4'b0011: begin
 						alu_op = F;
@@ -291,7 +290,7 @@ module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel,
 						alu_op = EQ;
 					end
 					//BLT
-					4'1001: begin
+					4'b1001: begin
 						alu_op = LT;
 					end
 					//BLTE
@@ -360,7 +359,7 @@ module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel,
 				src2_sel = 4'b0000;
 			end
 			
-			default:
+			default: begin
 				pc_mux_sel = 2'b00;
 				reg_data_in_mux = 2'b00;
 				reg_wr_en = 1'b0;
@@ -373,6 +372,7 @@ module Controller(instr, cond_flag, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel,
 				wr_sel = 4'b0000;
 				src1_sel = 4'b0000;
 				src2_sel = 4'b0000;
+			end
 		endcase
 	end
 endmodule
