@@ -71,8 +71,8 @@ module ALU(in1, in2, control, out, compare);
 				end
 			end
 			T: begin
-				calc = 32'd0;
-				compcalc = 1'b0;
+				calc = 32'd1;
+				compcalc = 1'b1;
 			end
 			NE: begin
 				if (in1 != in2) begin
