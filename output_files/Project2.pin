@@ -28,7 +28,7 @@
  -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
  --                 of its bank.
  --					Bank 2A:		3.3V
- --					Bank 3A:		3.3V
+ --					Bank 3A:		2.5V
  --					Bank 3B:		3.3V
  --					Bank 4A:		3.3V
  --					Bank 5A:		2.5V
@@ -83,10 +83,10 @@ RESERVED_INPUT               : A5        :        :                   :         
 VCCIO8A                      : A6        : power  :                   : 2.5V    : 8A        :                
 RESERVED_INPUT               : A7        :        :                   :         : 8A        :                
 RESERVED_INPUT               : A8        :        :                   :         : 8A        :                
-RESERVED_INPUT               : A9        :        :                   :         : 8A        :                
-RESERVED_INPUT               : A10       :        :                   :         : 8A        :                
+instWord[30]                 : A9        : output : 2.5 V             :         : 8A        : N              
+instWord[18]                 : A10       : output : 2.5 V             :         : 8A        : N              
 GND                          : A11       : gnd    :                   :         :           :                
-RESERVED_INPUT               : A12       :        :                   :         : 7A        :                
+instWord[13]                 : A12       : output : 2.5 V             :         : 7A        : N              
 RESERVED_INPUT               : A13       :        :                   :         : 7A        :                
 RESERVED_INPUT               : A14       :        :                   :         : 7A        :                
 RESERVED_INPUT               : A15       :        :                   :         : 7A        :                
@@ -150,9 +150,9 @@ RESERVED_INPUT               : B6        :        :                   :         
 RESERVED_INPUT               : B7        :        :                   :         : 8A        :                
 VREFB8AN0                    : B8        : power  :                   :         : 8A        :                
 GND                          : B9        : gnd    :                   :         :           :                
-RESERVED_INPUT               : B10       :        :                   :         : 8A        :                
-RESERVED_INPUT               : B11       :        :                   :         : 7A        :                
-RESERVED_INPUT               : B12       :        :                   :         : 7A        :                
+instWord[15]                 : B10       : output : 2.5 V             :         : 8A        : N              
+instWord[31]                 : B11       : output : 2.5 V             :         : 7A        : N              
+instWord[14]                 : B12       : output : 2.5 V             :         : 7A        : N              
 RESERVED_INPUT               : B13       :        :                   :         : 7A        :                
 GND                          : B14       : gnd    :                   :         :           :                
 RESERVED_INPUT               : B15       :        :                   :         : 7A        :                
@@ -168,14 +168,14 @@ RESERVED_INPUT               : C2        :        :                   :         
 GND                          : C3        : gnd    :                   :         :           :                
 GND                          : C4        : gnd    :                   :         :           :                
 GND                          : C5        :        :                   :         : 9A        :                
-RESERVED_INPUT               : C6        :        :                   :         : 8A        :                
+instWord[19]                 : C6        : output : 2.5 V             :         : 8A        : N              
 VCCIO8A                      : C7        : power  :                   : 2.5V    : 8A        :                
 RESERVED_INPUT               : C8        :        :                   :         : 8A        :                
 RESERVED_INPUT               : C9        :        :                   :         : 8A        :                
 VCCPD7A8A                    : C10       : power  :                   : 2.5V    :           :                
-RESERVED_INPUT               : C11       :        :                   :         : 7A        :                
+instWord[12]                 : C11       : output : 2.5 V             :         : 7A        : N              
 VCCIO7A                      : C12       : power  :                   : 2.5V    : 7A        :                
-RESERVED_INPUT               : C13       :        :                   :         : 7A        :                
+instWord[20]                 : C13       : output : 2.5 V             :         : 7A        : N              
 VREFB7AN0                    : C14       : power  :                   :         : 7A        :                
 RESERVED_INPUT               : C15       :        :                   :         : 7A        :                
 RESERVED_INPUT               : C16       :        :                   :         : 7A        :                
@@ -196,8 +196,8 @@ VCCPD7A8A                    : D8        : power  :                   : 2.5V    
 RESERVED_INPUT               : D9        :        :                   :         : 8A        :                
 GND                          : D10       : gnd    :                   :         :           :                
 VCC_AUX                      : D11       : power  :                   : 2.5V    :           :                
-RESERVED_INPUT               : D12       :        :                   :         : 7A        :                
-RESERVED_INPUT               : D13       :        :                   :         : 7A        :                
+instWord[26]                 : D12       : output : 2.5 V             :         : 7A        : N              
+instWord[1]                  : D13       : output : 2.5 V             :         : 7A        : N              
 VCCPD7A8A                    : D14       : power  :                   : 2.5V    :           :                
 VCCIO7A                      : D15       : power  :                   : 2.5V    : 7A        :                
 VCCPD7A8A                    : D16       : power  :                   : 2.5V    :           :                
@@ -218,9 +218,9 @@ VCCIO8A                      : E8        : power  :                   : 2.5V    
 RESERVED_INPUT               : E9        :        :                   :         : 8A        :                
 RESERVED_INPUT               : E10       :        :                   :         : 8A        :                
 VCCPD7A8A                    : E11       : power  :                   : 2.5V    :           :                
-RESERVED_INPUT               : E12       :        :                   :         : 7A        :                
+instWord[25]                 : E12       : output : 2.5 V             :         : 7A        : N              
 GND                          : E13       : gnd    :                   :         :           :                
-RESERVED_INPUT               : E14       :        :                   :         : 7A        :                
+instWord[11]                 : E14       : output : 2.5 V             :         : 7A        : N              
 RESERVED_INPUT               : E15       :        :                   :         : 7A        :                
 RESERVED_INPUT               : E16       :        :                   :         : 7A        :                
 DNU                          : E17       :        :                   :         :           :                
@@ -241,7 +241,7 @@ RESERVED_INPUT               : F9        :        :                   :         
 RESERVED_INPUT               : F10       :        :                   :         : 8A        :                
 VCCIO7A                      : F11       : power  :                   : 2.5V    : 7A        :                
 RESERVED_INPUT               : F12       :        :                   :         : 7A        :                
-RESERVED_INPUT               : F13       :        :                   :         : 7A        :                
+instWord[9]                  : F13       : output : 2.5 V             :         : 7A        : N              
 RESERVED_INPUT               : F14       :        :                   :         : 7A        :                
 RESERVED_INPUT               : F15       :        :                   :         : 7A        :                
 GND                          : F16       : gnd    :                   :         :           :                
@@ -258,11 +258,11 @@ GND                          : G4        : gnd    :                   :         
 nCE                          : G5        :        :                   :         : 9A        :                
 RESERVED_INPUT               : G6        :        :                   :         : 8A        :                
 VCCIO8A                      : G7        : power  :                   : 2.5V    : 8A        :                
-RESERVED_INPUT               : G8        :        :                   :         : 8A        :                
+instWord[7]                  : G8        : output : 2.5 V             :         : 8A        : N              
 GND                          : G9        : gnd    :                   :         :           :                
-RESERVED_INPUT               : G10       :        :                   :         : 8A        :                
+instWord[29]                 : G10       : output : 2.5 V             :         : 8A        : N              
 RESERVED_INPUT               : G11       :        :                   :         : 7A        :                
-RESERVED_INPUT               : G12       :        :                   :         : 7A        :                
+instWord[23]                 : G12       : output : 2.5 V             :         : 7A        : N              
 RESERVED_INPUT               : G13       :        :                   :         : 7A        :                
 VCCIO7A                      : G14       : power  :                   : 2.5V    : 7A        :                
 RESERVED_INPUT               : G15       :        :                   :         : 7A        :                
@@ -280,12 +280,12 @@ GND                          : H4        : gnd    :                   :         
 nSTATUS                      : H5        :        :                   :         : 9A        :                
 RESERVED_INPUT               : H6        :        :                   :         : 8A        :                
 GND                          : H7        : gnd    :                   :         :           :                
-RESERVED_INPUT               : H8        :        :                   :         : 8A        :                
+instWord[0]                  : H8        : output : 2.5 V             :         : 8A        : N              
 RESERVED_INPUT               : H9        :        :                   :         : 8A        :                
 RESERVED_INPUT               : H10       :        :                   :         : 7A        :                
-RESERVED_INPUT               : H11       :        :                   :         : 7A        :                
+instWord[21]                 : H11       : output : 2.5 V             :         : 7A        : N              
 GND                          : H12       : gnd    :                   :         :           :                
-RESERVED_INPUT               : H13       :        :                   :         : 7A        :                
+instWord[3]                  : H13       : output : 2.5 V             :         : 7A        : N              
 RESERVED_INPUT               : H14       :        :                   :         : 7A        :                
 RESERVED_INPUT               : H15       :        :                   :         : 7A        :                
 RESERVED_INPUT               : H16       :        :                   :         : 7A        :                
@@ -301,11 +301,11 @@ GND                          : J3        : gnd    :                   :         
 VCC                          : J4        : power  :                   : 1.1V    :           :                
 GND                          : J5        : gnd    :                   :         :           :                
 MSEL1                        : J6        : input  :                   :         : 9A        :                
-RESERVED_INPUT               : J7        :        :                   :         : 8A        :                
-RESERVED_INPUT               : J8        :        :                   :         : 8A        :                
-RESERVED_INPUT               : J9        :        :                   :         : 8A        :                
+instWord[10]                 : J7        : output : 2.5 V             :         : 8A        : N              
+instWord[24]                 : J8        : output : 2.5 V             :         : 8A        : N              
+instWord[5]                  : J9        : output : 2.5 V             :         : 8A        : N              
 VCC                          : J10       : power  :                   : 1.1V    :           :                
-RESERVED_INPUT               : J11       :        :                   :         : 7A        :                
+instWord[8]                  : J11       : output : 2.5 V             :         : 7A        : N              
 VCC                          : J12       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT               : J13       :        :                   :         : 7A        :                
 VCC                          : J14       : power  :                   : 1.1V    :           :                
@@ -323,9 +323,9 @@ VCC                          : K3        : power  :                   : 1.1V    
 GND                          : K4        : gnd    :                   :         :           :                
 VCC                          : K5        : power  :                   : 1.1V    :           :                
 CONF_DONE                    : K6        : bidir  :                   :         : 9A        :                
-RESERVED_INPUT               : K7        :        :                   :         : 8A        :                
+instWord[4]                  : K7        : output : 2.5 V             :         : 8A        : N              
 GND                          : K8        : gnd    :                   :         :           :                
-RESERVED_INPUT               : K9        :        :                   :         : 7A        :                
+instWord[22]                 : K9        : output : 2.5 V             :         : 7A        : N              
 GND                          : K10       : gnd    :                   :         :           :                
 VCC                          : K11       : power  :                   : 1.1V    :           :                
 GND                          : K12       : gnd    :                   :         :           :                
@@ -337,16 +337,16 @@ RESERVED_INPUT               : K17       :        :                   :         
 VCCIO5B                      : K18       : power  :                   : 2.5V    : 5B        :                
 RESERVED_INPUT               : K19       :        :                   :         : 7A        :                
 RESERVED_INPUT               : K20       :        :                   :         : 7A        :                
-RESERVED_INPUT               : K21       :        :                   :         : 5B        :                
-RESERVED_INPUT               : K22       :        :                   :         : 5B        :                
+instWord[2]                  : K21       : output : 2.5 V             :         : 5B        : N              
+instWord[27]                 : K22       : output : 2.5 V             :         : 5B        : N              
 LEDR[9]                      : L1        : output : 3.3-V LVTTL       :         : 2A        : Y              
 LEDR[8]                      : L2        : output : 3.3-V LVTTL       :         : 2A        : Y              
 GND                          : L3        : gnd    :                   :         :           :                
 VCC                          : L4        : power  :                   : 1.1V    :           :                
 GND                          : L5        : gnd    :                   :         :           :                
 MSEL0                        : L6        : input  :                   :         : 9A        :                
-RESERVED_INPUT               : L7        :        :                   :         : 8A        :                
-RESERVED_INPUT               : L8        :        :                   :         : 7A        :                
+instWord[16]                 : L7        : output : 2.5 V             :         : 8A        : N              
+instWord[6]                  : L8        : output : 2.5 V             :         : 7A        : N              
 DNU                          : L9        :        :                   :         :           :                
 VCC                          : L10       : power  :                   : 1.1V    :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -378,7 +378,7 @@ GND                          : M14       : gnd    :                   :         
 VCC                          : M15       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT               : M16       :        :                   :         : 5B        :                
 VCCPD5B                      : M17       : power  :                   : 2.5V    : 5B        :                
-RESERVED_INPUT               : M18       :        :                   :         : 5B        :                
+instWord[17]                 : M18       : output : 2.5 V             :         : 5B        : N              
 VCCIO5B                      : M19       : power  :                   : 2.5V    : 5B        :                
 RESERVED_INPUT               : M20       :        :                   :         : 5B        :                
 RESERVED_INPUT               : M21       :        :                   :         : 5B        :                
@@ -411,7 +411,7 @@ VCC                          : P3        : power  :                   : 1.1V    
 GND                          : P4        : gnd    :                   :         :           :                
 TMS                          : P5        : input  :                   :         : 3A        :                
 RESERVED_INPUT               : P6        :        :                   :         : 3A        :                
-RESERVED_INPUT               : P7        :        :                   :         : 3A        :                
+instWord[28]                 : P7        : output : 2.5 V             :         : 3A        : N              
 RESERVED_INPUT               : P8        :        :                   :         : 3B        :                
 RESERVED_INPUT               : P9        :        :                   :         : 3B        :                
 GND                          : P10       : gnd    :                   :         :           :                
@@ -454,7 +454,7 @@ GND                          : T2        : gnd    :                   :         
 VCCA_FPLL                    : T3        : power  :                   : 2.5V    :           :                
 AS_DATA3, DATA3              : T4        : input  :                   :         : 3A        :                
 VCCA_FPLL                    : T5        : power  :                   : 2.5V    :           :                
-VCCIO3A                      : T6        : power  :                   : 3.3V    : 3A        :                
+VCCIO3A                      : T6        : power  :                   : 2.5V    : 3A        :                
 RESERVED_INPUT               : T7        :        :                   :         : 3A        :                
 RESERVED_INPUT               : T8        :        :                   :         : 3A        :                
 RESERVED_INPUT               : T9        :        :                   :         : 3B        :                
@@ -520,7 +520,7 @@ LEDR[2]                      : W2        : output : 3.3-V LVTTL       :         
 GND                          : W3        : gnd    :                   :         :           :                
 GND                          : W4        : gnd    :                   :         :           :                
 TDI                          : W5        : input  :                   :         : 3A        :                
-VCCPD3A                      : W6        : power  :                   : 3.3V    : 3A        :                
+VCCPD3A                      : W6        : power  :                   : 2.5V    : 3A        :                
 VCC_AUX                      : W7        : power  :                   : 2.5V    :           :                
 RESERVED_INPUT               : W8        :        :                   :         : 3A        :                
 KEY[1]                       : W9        : input  : 3.3-V LVTTL       :         : 3A        : Y              
@@ -544,7 +544,7 @@ VCCIO2A                      : Y4        : power  :                   : 3.3V    
 GND                          : Y5        : gnd    :                   :         :           :                
 NC                           : Y6        :        :                   :         :           :                
 VREFB3AN0                    : Y7        : power  :                   :         : 3A        :                
-VCCIO3A                      : Y8        : power  :                   : 3.3V    : 3A        :                
+VCCIO3A                      : Y8        : power  :                   : 2.5V    : 3A        :                
 RESERVED_INPUT               : Y9        :        :                   :         : 3B        :                
 RESERVED_INPUT               : Y10       :        :                   :         : 3B        :                
 RESERVED_INPUT               : Y11       :        :                   :         : 3B        :                

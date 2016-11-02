@@ -1,0 +1,319 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Yuanhan\Documents\2016-2017\CS 3220\Project2\simulation\modelsim
+vAdder
+I6E6R_BXWlI:oW;e[aU8k60
+VaMe613`o`B`9fdoGQnJ9a1
+Z1 dC:\Users\Yuanhan\Documents\2016-2017\CS 3220\Project2\simulation\modelsim
+w1477972140
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Adder.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Adder.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2} -O0
+n@adder
+!i10b 1
+!s100 g[z]I;6gBz;h3fXJ_I9D_2
+!s85 0
+!s108 1478059046.611000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Adder.v|
+!s101 -O0
+vALU
+IYY:P^^bR6XB^2o6AFOMHP0
+V57Lzo6@n]R4KKK0I>iaLD3
+R1
+w1477964530
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/ALU.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/ALU.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@a@l@u
+!i10b 1
+!s100 ?PV@O>NTRi4mf3gPEA[H:3
+!s85 0
+!s108 1478059046.326000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/ALU.v|
+!s101 -O0
+vBranchPicker
+IQLI4?3ICz:@0UT7A=Z0Yd2
+VG5JdHn:nTO637_>MMmVf[2
+R1
+w1477973359
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/BranchPicker.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/BranchPicker.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@branch@picker
+!i10b 1
+!s100 aD1bE@Gc2YBe1g?K2e>9F2
+!s85 0
+!s108 1478059046.935000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/BranchPicker.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/BranchPicker.v|
+!s101 -O0
+vClockDivider
+IPK2zVV38zzaAe4aN_Gn^^3
+VaKdc5j@1:M>gC`:8]0G=Z3
+R1
+w1478045352
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/ClockDivider.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/ClockDivider.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@clock@divider
+!i10b 1
+!s100 iLKh8jS4HNooGR[=GIY1n0
+!s85 0
+!s108 1478059046.248000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/ClockDivider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/ClockDivider.v|
+!s101 -O0
+vController
+IO7@9?T3[^IPYTZ6SUj7cl1
+V3CL_b]@hljLNHb;jF>VWC1
+R1
+w1477970587
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Controller.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Controller.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@controller
+!i10b 1
+!s100 ?c0O8bNO:2h<JSMZi=aBO3
+!s85 0
+!s108 1478059046.430000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Controller.v|
+!s101 -O0
+vDataMemory
+IT7[37aDb0OlJ10QS8g3Kc1
+VSD_k8Io5_474EX`ck]B[`1
+R1
+w1478041578
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/DataMemory.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/DataMemory.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@data@memory
+!i10b 1
+!s100 GA=@@[mhQ5:26>fR@I]^>3
+!s85 0
+!s108 1478059046.164000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/DataMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/DataMemory.v|
+!s101 -O0
+vhex2_7seg
+IFg3Gc`cN_3<Xm:`84R]Z=0
+VMeM0MPo:4zPLc2`PjCncQ2
+R1
+w1478042814
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/hex2_7seg.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/hex2_7seg.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 V]_K:Z;JH`Ze_a>J`J6[k3
+!s85 0
+!s108 1478059047.045000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/hex2_7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/hex2_7seg.v|
+!s101 -O0
+vInstMemory
+IoY;`=hOaJ3bG9=A<lZbI<0
+VUJYb>IZO9F_mPNHYd`^832
+R1
+w1478053584
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/InstMemory.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/InstMemory.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@inst@memory
+!i10b 1
+!s100 QALfh=KbkHPMWWm<BJ6A[0
+!s85 0
+!s108 1478059046.077000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/InstMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/InstMemory.v|
+!s101 -O0
+vLeftShift
+I4PQl0?Jf_cjcg=1Q602[F2
+Vb4TS_fNfezgbHFUUj2B2n2
+R1
+w1477972317
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/LeftShift.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/LeftShift.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@left@shift
+!i10b 1
+!s100 EKM^z4o7SzKMEO9l:XKed2
+!s85 0
+!s108 1478059046.713000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/LeftShift.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/LeftShift.v|
+!s101 -O0
+vMultiplexer
+I4RZdlOSd8bzHi?1E[oE;o2
+VUEPLQPHMX_o;TiIUi_DXj1
+R1
+w1477971922
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Multiplexer.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Multiplexer.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@multiplexer
+!i10b 1
+!s100 zVRKKOdD2@eBgl^NIVLz^0
+!s85 0
+!s108 1478059046.520000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Multiplexer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Multiplexer.v|
+!s101 -O0
+vProject2
+INn5<>7W97l0;V3e25DQ^A1
+VjM@<2;Pmnh8ldWbV^S9ST1
+R1
+w1478058663
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Project2.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Project2.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@project2
+!i10b 1
+!s100 OY6GK_ASXQ`daL4IzAXNA1
+!s85 0
+!s108 1478059045.878000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Project2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Project2.v|
+!s101 -O0
+vRegFile
+I=P[znRd5V^h<gd2Kn0Ohn3
+VL7YF56dU^_k9dHRg1KO>R0
+R1
+w1477973180
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/RegFile.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/RegFile.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@reg@file
+!i10b 1
+!s100 Az_42]E<nG^JBo_N;[4OV0
+!s85 0
+!s108 1478059046.851000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/RegFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/RegFile.v|
+!s101 -O0
+vRegister
+IAlz9gB86lP`6mXIRC:<QM3
+VcF=KTBfmNkUbE2U153[EE2
+R1
+w1476927334
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Register.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Register.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@register
+!i10b 1
+!s100 ^<7miJ[>_7nSOEeWFnL:<1
+!s85 0
+!s108 1478059045.762000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Register.v|
+!s101 -O0
+vSignExtension
+IaaC:2U0CZmnQXd7]FJ92:0
+V4dfZnVj2jB=k4[_jW314B1
+R1
+w1477971969
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/SignExtension.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/SignExtension.v
+L0 1
+R2
+r1
+31
+R3
+n@sign@extension
+R4
+!i10b 1
+!s100 9cYR7[4BjOMDbZRYZX8H00
+!s85 0
+!s108 1478059045.662000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/SignExtension.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/SignExtension.v|
+!s101 -O0
+vTestProject2
+!i10b 1
+!s100 Mmc98kPKHnA1=?M2_]U_P1
+I5l_cHAkgoC5TPPkYEDXJN3
+V17CIQC1a[=::SKe2^Mg[f2
+R1
+w1478056505
+8C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/TestProject2.v
+FC:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/TestProject2.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1478059047.176000
+!s107 C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/TestProject2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2|C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/TestProject2.v|
+!s101 -O0
+R3
+R4
+n@test@project2

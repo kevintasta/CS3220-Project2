@@ -1,5 +1,5 @@
 module InstMemory(addr, dataOut);
-	parameter MEM_INIT_FILE = "Test2.mif";
+	parameter MEM_INIT_FILE;
 	parameter ADDR_BIT_WIDTH = 11;
 	parameter DATA_BIT_WIDTH = 32;
 	parameter N_WORDS = (1 << ADDR_BIT_WIDTH);

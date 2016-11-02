@@ -13,45 +13,77 @@ KEY[0] => KEY[0].IN1
 KEY[1] => KEY[1].IN1
 KEY[2] => KEY[2].IN1
 KEY[3] => KEY[3].IN1
-LEDR[0] <= clk.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[1] <= <GND>
-LEDR[2] <= <GND>
-LEDR[3] <= <GND>
-LEDR[4] <= <GND>
-LEDR[5] <= <GND>
-LEDR[6] <= <GND>
-LEDR[7] <= <GND>
-LEDR[8] <= <GND>
-LEDR[9] <= <GND>
-HEX0[0] <= hex2_7seg:comb_39.port1
-HEX0[1] <= hex2_7seg:comb_39.port1
-HEX0[2] <= hex2_7seg:comb_39.port1
-HEX0[3] <= hex2_7seg:comb_39.port1
-HEX0[4] <= hex2_7seg:comb_39.port1
-HEX0[5] <= hex2_7seg:comb_39.port1
-HEX0[6] <= hex2_7seg:comb_39.port1
-HEX1[0] <= hex2_7seg:comb_40.port1
-HEX1[1] <= hex2_7seg:comb_40.port1
-HEX1[2] <= hex2_7seg:comb_40.port1
-HEX1[3] <= hex2_7seg:comb_40.port1
-HEX1[4] <= hex2_7seg:comb_40.port1
-HEX1[5] <= hex2_7seg:comb_40.port1
-HEX1[6] <= hex2_7seg:comb_40.port1
-HEX2[0] <= hex2_7seg:comb_41.port1
-HEX2[1] <= hex2_7seg:comb_41.port1
-HEX2[2] <= hex2_7seg:comb_41.port1
-HEX2[3] <= hex2_7seg:comb_41.port1
-HEX2[4] <= hex2_7seg:comb_41.port1
-HEX2[5] <= hex2_7seg:comb_41.port1
-HEX2[6] <= hex2_7seg:comb_41.port1
-HEX3[0] <= hex2_7seg:comb_42.port1
-HEX3[1] <= hex2_7seg:comb_42.port1
-HEX3[2] <= hex2_7seg:comb_42.port1
-HEX3[3] <= hex2_7seg:comb_42.port1
-HEX3[4] <= hex2_7seg:comb_42.port1
-HEX3[5] <= hex2_7seg:comb_42.port1
-HEX3[6] <= hex2_7seg:comb_42.port1
+LEDR[0] <= DataMemory:dataMem.port6
+LEDR[1] <= DataMemory:dataMem.port6
+LEDR[2] <= DataMemory:dataMem.port6
+LEDR[3] <= DataMemory:dataMem.port6
+LEDR[4] <= DataMemory:dataMem.port6
+LEDR[5] <= DataMemory:dataMem.port6
+LEDR[6] <= DataMemory:dataMem.port6
+LEDR[7] <= DataMemory:dataMem.port6
+LEDR[8] <= DataMemory:dataMem.port6
+LEDR[9] <= DataMemory:dataMem.port6
+HEX0[0] <= hex2_7seg:h2s0.port1
+HEX0[1] <= hex2_7seg:h2s0.port1
+HEX0[2] <= hex2_7seg:h2s0.port1
+HEX0[3] <= hex2_7seg:h2s0.port1
+HEX0[4] <= hex2_7seg:h2s0.port1
+HEX0[5] <= hex2_7seg:h2s0.port1
+HEX0[6] <= hex2_7seg:h2s0.port1
+HEX1[0] <= hex2_7seg:h2s1.port1
+HEX1[1] <= hex2_7seg:h2s1.port1
+HEX1[2] <= hex2_7seg:h2s1.port1
+HEX1[3] <= hex2_7seg:h2s1.port1
+HEX1[4] <= hex2_7seg:h2s1.port1
+HEX1[5] <= hex2_7seg:h2s1.port1
+HEX1[6] <= hex2_7seg:h2s1.port1
+HEX2[0] <= hex2_7seg:h2s2.port1
+HEX2[1] <= hex2_7seg:h2s2.port1
+HEX2[2] <= hex2_7seg:h2s2.port1
+HEX2[3] <= hex2_7seg:h2s2.port1
+HEX2[4] <= hex2_7seg:h2s2.port1
+HEX2[5] <= hex2_7seg:h2s2.port1
+HEX2[6] <= hex2_7seg:h2s2.port1
+HEX3[0] <= hex2_7seg:h2s3.port1
+HEX3[1] <= hex2_7seg:h2s3.port1
+HEX3[2] <= hex2_7seg:h2s3.port1
+HEX3[3] <= hex2_7seg:h2s3.port1
+HEX3[4] <= hex2_7seg:h2s3.port1
+HEX3[5] <= hex2_7seg:h2s3.port1
+HEX3[6] <= hex2_7seg:h2s3.port1
 CLOCK_50 => CLOCK_50.IN1
+instWord[0] <= instWord[0].DB_MAX_OUTPUT_PORT_TYPE
+instWord[1] <= instWord[1].DB_MAX_OUTPUT_PORT_TYPE
+instWord[2] <= instWord[2].DB_MAX_OUTPUT_PORT_TYPE
+instWord[3] <= instWord[3].DB_MAX_OUTPUT_PORT_TYPE
+instWord[4] <= instWord[4].DB_MAX_OUTPUT_PORT_TYPE
+instWord[5] <= instWord[5].DB_MAX_OUTPUT_PORT_TYPE
+instWord[6] <= instWord[6].DB_MAX_OUTPUT_PORT_TYPE
+instWord[7] <= instWord[7].DB_MAX_OUTPUT_PORT_TYPE
+instWord[8] <= instWord[8].DB_MAX_OUTPUT_PORT_TYPE
+instWord[9] <= instWord[9].DB_MAX_OUTPUT_PORT_TYPE
+instWord[10] <= instWord[10].DB_MAX_OUTPUT_PORT_TYPE
+instWord[11] <= instWord[11].DB_MAX_OUTPUT_PORT_TYPE
+instWord[12] <= instWord[12].DB_MAX_OUTPUT_PORT_TYPE
+instWord[13] <= instWord[13].DB_MAX_OUTPUT_PORT_TYPE
+instWord[14] <= instWord[14].DB_MAX_OUTPUT_PORT_TYPE
+instWord[15] <= instWord[15].DB_MAX_OUTPUT_PORT_TYPE
+instWord[16] <= instWord[16].DB_MAX_OUTPUT_PORT_TYPE
+instWord[17] <= instWord[17].DB_MAX_OUTPUT_PORT_TYPE
+instWord[18] <= instWord[18].DB_MAX_OUTPUT_PORT_TYPE
+instWord[19] <= instWord[19].DB_MAX_OUTPUT_PORT_TYPE
+instWord[20] <= instWord[20].DB_MAX_OUTPUT_PORT_TYPE
+instWord[21] <= instWord[21].DB_MAX_OUTPUT_PORT_TYPE
+instWord[22] <= instWord[22].DB_MAX_OUTPUT_PORT_TYPE
+instWord[23] <= instWord[23].DB_MAX_OUTPUT_PORT_TYPE
+instWord[24] <= instWord[24].DB_MAX_OUTPUT_PORT_TYPE
+instWord[25] <= instWord[25].DB_MAX_OUTPUT_PORT_TYPE
+instWord[26] <= instWord[26].DB_MAX_OUTPUT_PORT_TYPE
+instWord[27] <= instWord[27].DB_MAX_OUTPUT_PORT_TYPE
+instWord[28] <= instWord[28].DB_MAX_OUTPUT_PORT_TYPE
+instWord[29] <= instWord[29].DB_MAX_OUTPUT_PORT_TYPE
+instWord[30] <= instWord[30].DB_MAX_OUTPUT_PORT_TYPE
+instWord[31] <= instWord[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Project2|ClockDivider:clk_divider
@@ -2634,7 +2666,7 @@ out[31] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 compare <= compcalc.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project2|DataMemory:comb_38
+|Project2|DataMemory:dataMem
 clk => key_reg[0].CLK
 clk => key_reg[1].CLK
 clk => key_reg[2].CLK
@@ -3350,7 +3382,7 @@ dOut[30] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
 dOut[31] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project2|hex2_7seg:comb_39
+|Project2|hex2_7seg:h2s0
 num[0] => Equal0.IN31
 num[0] => Equal1.IN0
 num[0] => Equal2.IN31
@@ -3424,7 +3456,7 @@ display[5] <= display.DB_MAX_OUTPUT_PORT_TYPE
 display[6] <= display.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project2|hex2_7seg:comb_40
+|Project2|hex2_7seg:h2s1
 num[0] => Equal0.IN31
 num[0] => Equal1.IN0
 num[0] => Equal2.IN31
@@ -3498,7 +3530,7 @@ display[5] <= display.DB_MAX_OUTPUT_PORT_TYPE
 display[6] <= display.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project2|hex2_7seg:comb_41
+|Project2|hex2_7seg:h2s2
 num[0] => Equal0.IN31
 num[0] => Equal1.IN0
 num[0] => Equal2.IN31
@@ -3572,7 +3604,7 @@ display[5] <= display.DB_MAX_OUTPUT_PORT_TYPE
 display[6] <= display.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project2|hex2_7seg:comb_42
+|Project2|hex2_7seg:h2s3
 num[0] => Equal0.IN31
 num[0] => Equal1.IN0
 num[0] => Equal2.IN31

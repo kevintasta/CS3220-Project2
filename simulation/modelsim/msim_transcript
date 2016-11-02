@@ -1,0 +1,131 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Project2_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/SignExtension.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SignExtension
+# 
+# Top level modules:
+# 	SignExtension
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Register.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Register
+# 
+# Top level modules:
+# 	Register
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Project2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Project2
+# 
+# Top level modules:
+# 	Project2
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/InstMemory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module InstMemory
+# 
+# Top level modules:
+# 	InstMemory
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/DataMemory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DataMemory
+# 
+# Top level modules:
+# 	DataMemory
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/ClockDivider.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ClockDivider
+# 
+# Top level modules:
+# 	ClockDivider
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Controller
+# 
+# Top level modules:
+# 	Controller
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Multiplexer.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Multiplexer
+# 
+# Top level modules:
+# 	Multiplexer
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/Adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Adder
+# 
+# Top level modules:
+# 	Adder
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/LeftShift.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LeftShift
+# 
+# Top level modules:
+# 	LeftShift
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/RegFile.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegFile
+# 
+# Top level modules:
+# 	RegFile
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/BranchPicker.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module BranchPicker
+# 
+# Top level modules:
+# 	BranchPicker
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/hex2_7seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hex2_7seg
+# 
+# Top level modules:
+# 	hex2_7seg
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Yuanhan/Documents/2016-2017/CS\ 3220/Project2 {C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/TestProject2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module TestProject2
+# 
+# Top level modules:
+# 	TestProject2
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  TestProject2
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps TestProject2 
+# Loading work.TestProject2
+# Loading work.Project2
+# Loading work.ClockDivider
+# Loading work.Register
+# Loading work.InstMemory
+# Loading work.Controller
+# Loading work.Multiplexer
+# Loading work.Adder
+# Loading work.BranchPicker
+# Loading work.LeftShift
+# Loading work.SignExtension
+# Loading work.RegFile
+# Loading work.ALU
+# Loading work.DataMemory
+# Loading work.hex2_7seg
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module TestProject2 at C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/TestProject2.v line 35
+# Simulation Breakpoint: Break in Module TestProject2 at C:/Users/Yuanhan/Documents/2016-2017/CS 3220/Project2/TestProject2.v line 35
+# MACRO ./Project2_run_msim_rtl_verilog.do PAUSED at line 30

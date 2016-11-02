@@ -1,5 +1,5 @@
 Flow report for Project2
-Tue Nov 01 20:47:03 2016
+Tue Nov 01 23:56:53 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +-------------------------------------+-------------------------------------------------+
-; Flow Status                         ; Analyzed - Tue Nov 01 20:47:03 2016             ;
+; Flow Status                         ; Analyzed - Tue Nov 01 23:56:53 2016             ;
 ; Quartus II 64-Bit Version           ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                       ; Project2                                        ;
 ; Top-level Entity Name               ; Project2                                        ;
 ; Family                              ; Cyclone V                                       ;
 ; Device                              ; 5CEBA4F23C7                                     ;
 ; Timing Models                       ; Final                                           ;
-; Logic utilization (in ALMs)         ; 21 / 18,480 ( < 1 % )                           ;
-; Total registers                     ; 28                                              ;
-; Total pins                          ; 53 / 224 ( 24 % )                               ;
+; Logic utilization (in ALMs)         ; 766 / 18,480 ( 4 % )                            ;
+; Total registers                     ; 612                                             ;
+; Total pins                          ; 85 / 224 ( 38 % )                               ;
 ; Total virtual pins                  ; 0                                               ;
-; Total block memory bits             ; 0 / 3,153,920 ( 0 % )                           ;
+; Total block memory bits             ; 65,536 / 3,153,920 ( 2 % )                      ;
 ; Total DSP Blocks                    ; 0 / 66 ( 0 % )                                  ;
 ; Total HSSI RX PCSs                  ; 0                                               ;
 ; Total HSSI PMA RX Deserializers     ; 0                                               ;
@@ -69,7 +69,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/01/2016 20:45:38 ;
+; Start date & time ; 11/01/2016 23:51:05 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Project2            ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                     ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 622311904.147804753822296 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 622311904.147805866519488 ; --            ; --          ; --         ;
 ; ENABLE_DRC_SETTINGS                 ; On                        ; Off           ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                        ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                         ; --            ; --          ; --         ;
@@ -103,12 +103,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 528 MB              ; 00:00:03                           ;
-; Fitter                    ; 00:00:50     ; 1.0                     ; 1463 MB             ; 00:00:49                           ;
-; Assembler                 ; 00:00:09     ; 1.0                     ; 599 MB              ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:16     ; 1.0                     ; 999 MB              ; 00:00:13                           ;
-; Design Assistant          ; 00:00:01     ; 1.0                     ; 478 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:18     ; --                      ; --                  ; 00:01:15                           ;
+; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 548 MB              ; 00:00:13                           ;
+; Fitter                    ; 00:04:16     ; 1.0                     ; 1513 MB             ; 00:04:15                           ;
+; Assembler                 ; 00:00:09     ; 1.0                     ; 604 MB              ; 00:00:09                           ;
+; TimeQuest Timing Analyzer ; 00:00:58     ; 1.0                     ; 1079 MB             ; 00:00:56                           ;
+; Design Assistant          ; 00:00:04     ; 1.0                     ; 567 MB              ; 00:00:04                           ;
+; Total                     ; 00:05:40     ; --                      ; --                  ; 00:05:37                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
