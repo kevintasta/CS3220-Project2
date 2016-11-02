@@ -1,29 +1,27 @@
 module ClockDivider (
-	inclk0,
-	c0,
+	clk_in,
+	clk_out,
 	locked);
 
-	input	  inclk0;
-	output	  c0;
 	output	  locked; // clock is paused when locked is 1
 
   // Implement this yourself
   // Slow down the clock to ensure the cycle is long enough for all operations to execute
   // If you don't, you might get weird errors
-  parameter count = 25000000;
-  parameter width = 32;
-  reg[width - 1: 0] counter = 0;
-  parameter divider = 25000000;
-  reg clkCount = 0;
-  assign clkOut = clkCount;
-  always @(posedge inclk0) begin
-		if (locked == 1'b0) begin
-			counter <= counter + 1;
+	input clk_in;
+	output clk_out;
+	parameter counter = 25000000;
+	reg[26:0] clk_count;
+	reg clk = 0;
+	always @ (posedge clk_in) begin
+		if (clk_count == counter) begin
+			clk <= ~clk;
+			clk_count <= 0;
 		end
-		if (counter == divider) begin
-			clkCount <= ~clkCount;
-			counter <= 0;
+		else begin
+			clk_count <= clk_count + 1;
 		end
 	end
+	assign clk_out = clk;
 
 endmodule

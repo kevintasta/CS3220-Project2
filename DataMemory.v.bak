@@ -1,5 +1,5 @@
 module DataMemory(clk, wrtEn, addr, dIn, sw, key, ledr, hex, dOut);
-	parameter MEM_INIT_FILE = "Test2.mif";
+	parameter MEM_INIT_FILE;
 	parameter ADDR_BIT_WIDTH = 32;
 	parameter DATA_BIT_WIDTH = 32;
 	parameter TRUE_ADDR_BIT_WIDTH = 11;

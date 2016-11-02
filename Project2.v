@@ -36,27 +36,29 @@ module Project2(SW,KEY,LEDR,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
   parameter OP1_JAL  					 = 4'b1011;
   
   // Add and modify parameters for various opcode and function code values
-  
-  ClockDivider	clk_divider (.inclk0 (CLOCK_50),.c0 (clk),.locked (lock));
+  wire clk;
+  ClockDivider	clk_divider (CLOCK_50, clk, lock);
+  assign LEDR[0] = clk;
   wire reset = ~lock;
-  
   // Create PC and its logic
   wire pcWrtEn = 1'b1;
   wire[DBITS - 1: 0] pcIn; // Implement the logic that generates pcIn; you may change pcIn to reg if necessary
   wire[DBITS - 1: 0] pcOut;
   // This PC instantiation is your starting point
-  Register #(.BIT_WIDTH(DBITS), .RESET_VALUE(START_PC)) pc (clk, reset, pcWrtEn, pcIn, pcOut);
+  //Register #(.BIT_WIDTH(DBITS), .RESET_VALUE(START_PC)) pc (clk, reset, pcWrtEn, pcIn, pcOut);
+  Register pc (clk, reset, pcWrtEn, pcIn, pcOut);
 
   // Creat instruction memeory
   wire[IMEM_DATA_BIT_WIDTH - 1: 0] instWord;
-  InstMemory #(IMEM_INIT_FILE, IMEM_ADDR_BIT_WIDTH, IMEM_DATA_BIT_WIDTH) instMem (pcOut[IMEM_PC_BITS_HI - 1: IMEM_PC_BITS_LO], instWord);
+  //InstMemory #(IMEM_INIT_FILE, IMEM_ADDR_BIT_WIDTH, IMEM_DATA_BIT_WIDTH) instMem (pcOut[IMEM_PC_BITS_HI - 1: IMEM_PC_BITS_LO], instWord);
+  InstMemory instMem (pcOut[IMEM_PC_BITS_HI - 1: IMEM_PC_BITS_LO], instWord);
   
   // Define all wires here
   // PC Mux wires
   wire[DBITS - 1:0] pcmux_out;
 
   // PC increment adder wires
-  wire[DBITS - 1:0] pcadder_out;
+  wire[DBITS - 1:0] pcadder_out, pcadder_src1 = 32'd4;
 
   // Branch picker wires
   wire[DBITS - 1:0] brpick_out;
@@ -122,11 +124,12 @@ module Project2(SW,KEY,LEDR,HEX0,HEX1,HEX2,HEX3,CLOCK_50);
 
   // Put the code for data memory and I/O here
   wire[15:0] hex;
-  DataMemory(clk, data_wr_en, alu_out, regfile_src2_out, SW, KEY, LEDR, hex, d_out);
-  assign HEX0 = hex[3:0];
-  assign HEX1 = hex[7:4];
-  assign HEX2 = hex[11:8];
-  assign HEX3 = hex[15:12];
+  wire[9:0] test;
+  DataMemory(clk, data_wr_en, alu_out, regfile_src2_out, SW, KEY, test, hex, d_out);
+  hex2_7seg(pcadder_out[3:0], HEX0);
+  hex2_7seg(pcadder_out[7:4], HEX1);
+  hex2_7seg(pcadder_out[11:8], HEX2);
+  hex2_7seg(pcadder_out[15:12], HEX3);
   // KEYS, SWITCHES, HEXS, and LEDS are memeory mapped IO
     
 endmodule
