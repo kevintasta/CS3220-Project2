@@ -135,8 +135,8 @@ module Controller(instr, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel, reg_data_i
 				
 				//Sets registers
 				wr_sel = 4'b0000;
-				src1_sel = instr[23:20];
-				src2_sel = instr[19:16];
+				src1_sel = instr[19:16];
+				src2_sel = instr[23:20];
 			end
 			
 			//load

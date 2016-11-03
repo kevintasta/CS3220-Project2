@@ -10,23 +10,23 @@ module TestController();
 
 	Controller control(instr, imm, src1_sel, src2_sel, wr_sel, pc_mux_sel, reg_data_in_mux, alu_src2_sel, alu_op, reg_wr_en, data_wr_en);
 	initial begin
-		//ADD A0,T1,T1
-		instr = 32'hc7055000;
+		//JAL T0,JALTARG(FP)
+		instr = 32'h604d00a0;
 		#10;
-		//XOR A0,A0,A1
-		instr = 32'hc2001000;
+		//ADDI T0,FP,-1
+		instr = 32'h474dffff;
 		#10;
-		//ADDI S1,S1,13
-		instr = 32'h4777000d;
+		//ADDI T1,FP,2
+		instr = 32'h475d0002;
 		#10;
-		//BNE T0,T1,INIT
-		instr = 32'h2545fffc;
+		//ADDI A0,FP,1
+		instr = 32'h470d0001;
 		#10;
-		//SW A3,0(T0)
-		instr = 32'h30340000;
+		//ADD A1,T0,T1
+		instr = 32'hc7145000;
 		#10;
-		//LW A3,0(T1)
-		instr = 32'h70350000;
+		//BEQ A0,A1,ADDWORKS
+		instr = 32'h26010004;
 		#10;
 		$stop;
 	end

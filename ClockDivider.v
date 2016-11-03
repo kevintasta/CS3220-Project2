@@ -11,7 +11,7 @@ module ClockDivider (
 	input clk_in;
 	output clk_out;
 	parameter counter = 25000000;
-	reg[26:0] clk_count;
+	reg[31:0] clk_count;
 	reg clk = 0;
 	always @ (posedge clk_in) begin
 		if (clk_count == counter) begin

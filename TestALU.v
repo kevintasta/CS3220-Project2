@@ -9,9 +9,9 @@ module TestALU();
 	wire compare;
 	ALU testerALU (A, B, opCode, out, compare);
 	initial begin
-		A = 32'd55;
-		B = 32'd109;
-		opCode = ADD;
+		A = -32'd8;
+		B = 32'd8;
+		opCode = LTE;
 		#10;
 		opCode = SUB;
 		#10;

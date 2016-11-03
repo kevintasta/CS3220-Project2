@@ -5,7 +5,10 @@ module RegFile(src1_sel, src2_sel, wr_sel, data_in, wr_en, clk, src1_out, src2_o
 	input[width - 1:0] data_in; 
 	output[width - 1:0] src1_out, src2_out;
 	reg[width-1:0] data [0:regnumer];
-	
+	integer i;
+	initial begin
+		for (i= 4'b0000; i<5'b10000; i=i+1) data[i] = 32'd0;
+	end
 	always @ (posedge clk) begin
 		if (wr_en == 1'b1) begin
 			data[wr_sel] <= data_in;

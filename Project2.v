@@ -123,7 +123,7 @@ module Project2(SW,KEY,LEDR,HEX0,HEX1,HEX2,HEX3,CLOCK_50, instWord);
   RegFile registerFile(src1_sel, src2_sel, wr_sel, regmux_out, reg_wr_en, clk, regfile_src1_out, regfile_src2_out);
   
   // Create ALU unit
-  ALU mainALU(regfile_src1_out, regmux_out, alu_op, alu_out, alu_compare);
+  ALU mainALU(regfile_src1_out, alumux_out, alu_op, alu_out, alu_compare);
 
   // Put the code for data memory and I/O here
   wire[15:0] hex;
@@ -133,6 +133,8 @@ module Project2(SW,KEY,LEDR,HEX0,HEX1,HEX2,HEX3,CLOCK_50, instWord);
   hex2_7seg h2s1(hex[7:4], HEX1);
   hex2_7seg h2s2(hex[11:8], HEX2);
   hex2_7seg h2s3(hex[15:12], HEX3);
+  //hex2_7seg h2s4(instWord[27:24], HEX4);
+  //hex2_7seg h2s5(instWord[31:28], HEX5);
   assign LEDR = test;
   //hex2_7seg h2s5(instWord[23:20], HEX5);
   // KEYS, SWITCHES, HEXS, and LEDS are memeory mapped IO

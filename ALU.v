@@ -44,7 +44,7 @@ module ALU(in1, in2, control, out, compare);
 				compcalc = 1'b0;
 			end
 			EQ: begin
-				if (in1 == in2) begin
+				if ($signed(in1) == $signed(in2)) begin
 					calc = 32'd1;
 					compcalc = 1'b1;
 				end else begin
@@ -53,7 +53,7 @@ module ALU(in1, in2, control, out, compare);
 				end
 			end
 			LT: begin
-				if (in1 < in2) begin
+				if ($signed(in1) < $signed(in2)) begin
 					calc = 32'd1;
 					compcalc = 1'b1;
 				end else begin
@@ -62,7 +62,7 @@ module ALU(in1, in2, control, out, compare);
 				end
 			end
 			LTE: begin
-				if (in1 <= in2) begin
+				if ($signed(in1) <= $signed(in2)) begin
 					calc = 32'd1;
 					compcalc = 1'b1;
 				end else begin
@@ -75,7 +75,7 @@ module ALU(in1, in2, control, out, compare);
 				compcalc = 1'b1;
 			end
 			NE: begin
-				if (in1 != in2) begin
+				if ($signed(in1) != $signed(in2)) begin
 					calc = 32'd1;
 					compcalc = 1'b1;
 				end else begin
@@ -84,7 +84,7 @@ module ALU(in1, in2, control, out, compare);
 				end
 			end
 			GTE: begin
-				if (in1 >= in2) begin
+				if ($signed(in1) >= $signed(in2)) begin
 					calc = 32'd1;
 					compcalc = 1'b1;
 				end else begin
@@ -93,7 +93,7 @@ module ALU(in1, in2, control, out, compare);
 				end
 			end
 			GT: begin
-				if (in1 > in2) begin
+				if ($signed(in1) > $signed(in2)) begin
 					calc = 32'd1;
 					compcalc = 1'b1;
 				end else begin

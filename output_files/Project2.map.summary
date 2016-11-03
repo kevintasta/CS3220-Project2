@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue Nov 01 23:51:18 2016
+Analysis & Synthesis Status : Successful - Wed Nov 02 22:04:40 2016
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Project2
 Top-level Entity Name : Project2
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 612
+Total registers : 617
 Total pins : 85
 Total virtual pins : 0
 Total block memory bits : 65,536

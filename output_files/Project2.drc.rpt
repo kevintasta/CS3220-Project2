@@ -1,5 +1,5 @@
 Design Assistant report for Project2
-Tue Nov 01 23:56:53 2016
+Wed Nov 02 22:16:19 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -9,11 +9,10 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   1. Legal Notice
   2. Design Assistant Summary
   3. Design Assistant Settings
-  4. Critical Violations
-  5. High Violations
-  6. Medium Violations
-  7. Information only Violations
-  8. Design Assistant Messages
+  4. High Violations
+  5. Medium Violations
+  6. Information only Violations
+  7. Design Assistant Messages
 
 
 
@@ -39,19 +38,18 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Design Assistant Summary                                                ;
 +-----------------------------------+-------------------------------------+
-; Design Assistant Status           ; Analyzed - Tue Nov 01 23:56:53 2016 ;
+; Design Assistant Status           ; Analyzed - Wed Nov 02 22:16:19 2016 ;
 ; Revision Name                     ; Project2                            ;
 ; Top-level Entity Name             ; Project2                            ;
 ; Family                            ; Cyclone V                           ;
-; Total Critical Violations         ; 1                                   ;
-; - Rule A101                       ; 1                                   ;
+; Total Critical Violations         ; 0                                   ;
 ; Total High Violations             ; 1                                   ;
 ; - Rule A108                       ; 1                                   ;
 ; Total Medium Violations           ; 2                                   ;
 ; - Rule C104                       ; 1                                   ;
 ; - Rule C106                       ; 1                                   ;
-; Total Information only Violations ; 87                                  ;
-; - Rule T101                       ; 37                                  ;
+; Total Information only Violations ; 97                                  ;
+; - Rule T101                       ; 47                                  ;
 ; - Rule T102                       ; 50                                  ;
 +-----------------------------------+-------------------------------------+
 
@@ -102,361 +100,6 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----+
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Critical Violations                                                                                          ;
-+---------------------------------------------------------------------------------+----------------------------+
-; Rule name                                                                       ; Name                       ;
-+---------------------------------------------------------------------------------+----------------------------+
-; Rule A101: Design should not contain combinational loops - Combinational loop 1 ;                            ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~2         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~1         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux31~5        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux23~0        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux21~1 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux24~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux25~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~14        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~13        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux21~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux28~0        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux26~2 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux22~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~38        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~37        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux20~1 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux10~1 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux4~3         ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux18~1 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux20~1        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~62        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~61        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~6         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~5         ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux19~1 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux21~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~6         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~5         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~38        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~37        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~34        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~33        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~10        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~9         ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux22~2 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux24~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~10        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~9         ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux22~1 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux27~2 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux31~2 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux27~1 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~14        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~13        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux23~2 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux23~1 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux25~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux27~0        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux25~2 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux27~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~26        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~25        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~22        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~21        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~18        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~17        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux27~4 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux29~0        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux27~3 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux29~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~18        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~17        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~2         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~1         ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux28~2 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux28~1 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux31~3 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux30~5        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux30~3        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux30~4        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux30~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~42        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~41        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux29~1 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux29~0 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~54        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~53        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux30~2 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux30~1 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux32~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux32~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~54        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~53        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~49        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux31~5 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux33~12       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux33~6        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux33~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Equal0~9       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Equal0~7       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Equal0~8       ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux2~0  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux5~2         ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux3~2  ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux0~1  ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux3~1  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux28~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~22        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~21        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux26~0        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux24~2 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux26~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~30        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~29        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~30        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~29        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~26        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~25        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux24~1 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux22~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux23~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~34        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~33        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux11~2 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux13~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~98        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~97        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~110       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~109       ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux12~2 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux14~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux14~1        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux12~1 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux10~3 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux12~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~102       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~101       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~102       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~101       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~98        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~97        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~110       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~109       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~106       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~105       ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux13~2 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux15~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~106       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~105       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~118       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~117       ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux14~2 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux16~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux16~1        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux14~1 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux16~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~118       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~117       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~114       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~113       ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux15~2 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux17~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~114       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~113       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~70        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~69        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux16~1 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux7~2  ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux7~1  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux9~2         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux9~1         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux9~0         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~82        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~81        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~78        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~77        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux8~2  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux10~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~78        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~77        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~74        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~73        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux9~2  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux11~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux11~1        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux9~1  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux11~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~74        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~73        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux12~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux12~1        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux14~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux17~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux17~1        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux18~1        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~70        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~69        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~66        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~65        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux17~1 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux19~1        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~66        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~65        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~62        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~61        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux19~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux18~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux15~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux15~1        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux13~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux13~1        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux10~2        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux10~1        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux8~1  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~82        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~81        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux15~1 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux13~1 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux10~2 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux11~1 ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux5~2  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux7~0         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~90        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~89        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~86        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~85        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux6~2  ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux6~1  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux8~2         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux8~1         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux8~0         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~86        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~85        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~90        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~89        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux7~2         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux7~1         ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux5~1  ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux4~2  ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux4~1  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux6~0         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~94        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~93        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~94        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~93        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux6~2         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux6~1         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux5~4         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux5~3         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~58        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~57        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~58        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~57        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux0~3  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux2~0         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~125       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~122       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~121       ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux1~2  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux3~2         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux3~1         ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux1~1  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux3~0         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~122       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~121       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~46        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~45        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~46        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~45        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~125       ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux0~2  ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux2~2         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux2~1         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Equal0~3       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Equal0~2       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~3    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~1    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Equal0~1       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~0    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~2    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Equal0~0       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|calc~0         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|calc~2         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~0    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|calc~1         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Equal0~6       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~1    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Equal0~5       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Equal0~4       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~26   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~23   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~22   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~21   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~2    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~24   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|calc~3         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~20   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~19   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~18   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~17   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~6    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~4    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~5    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~12   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~11   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~16   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~13   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~14   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~15   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~10   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~7    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~9    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~8    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~25   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan1~3    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux33~3        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~24   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~23   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~22   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~21   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~20   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~6    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~4    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~5    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~16   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~14   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~15   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~13   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~10   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~8    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~7    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~9    ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~12   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~11   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~19   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~18   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~17   ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux33~9        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~49        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add0~50        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux33~11       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux33~10       ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux33~8        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Equal0~10      ;
-;  Combinational loop 1                                                           ; ALU:mainALU|LessThan0~25   ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux31~4 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux32~1        ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux25~1 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux20~0        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux4~2         ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux4~1         ;
-;  Combinational loop 1                                                           ; Multiplexer:regmux|Mux26~1 ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux31~3        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~42        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Add1~41        ;
-;  Combinational loop 1                                                           ; ALU:mainALU|Mux31~4        ;
-+---------------------------------------------------------------------------------+----------------------------+
-
-
 +-------------------------------------------------------------------------------+
 ; High Violations                                                               ;
 +--------------------------------------------------------+----------------------+
@@ -467,45 +110,45 @@ applicable agreement for further details.
 +--------------------------------------------------------+----------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Medium Violations                                                                                                                                                                                     ;
-+----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-; Rule name                                                                                    ; Name                                                                                                   ;
-+----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-; Rule C104: Clock signal source should drive only clock input ports                           ; ClockDivider:clk_divider|clk                                                                           ;
-;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[3]                                                                                 ;
-;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[2]                                                                                 ;
-;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[6]                                                                                 ;
-;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[10]                                                                                ;
-;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[9]                                                                                 ;
-;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[8]                                                                                 ;
-;  Clock ports destination node(s) list                                                        ; RegFile:registerFile|data~392                                                                          ;
-;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[4]                                                                                 ;
-;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[12]                                                                                ;
-;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[7]                                                                                 ;
-;  Non-clock ports destination node(s) list                                                    ; ClockDivider:clk_divider|clk~0                                                                         ;
-; Rule C106: Clock signal source should not drive registers triggered by different clock edges ; ClockDivider:clk_divider|clk                                                                           ;
-;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[3]                                                                                 ;
-;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[2]                                                                                 ;
-;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[6]                                                                                 ;
-;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[10]                                                                                ;
-;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[9]                                                                                 ;
-;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[8]                                                                                 ;
-;  Positive edge destination node(s) list                                                      ; RegFile:registerFile|data~392                                                                          ;
-;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[4]                                                                                 ;
-;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[12]                                                                                ;
-;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[7]                                                                                 ;
-;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a4~porta_datain_reg7 ;
-;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a4~porta_datain_reg5 ;
-;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a2~porta_datain_reg0 ;
-;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a2~porta_datain_reg2 ;
-;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a2~porta_datain_reg3 ;
-;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a2~porta_datain_reg4 ;
-;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a2~porta_datain_reg6 ;
-;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a2~porta_datain_reg1 ;
-;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a2~porta_datain_reg7 ;
-;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a2~porta_datain_reg5 ;
-+----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Medium Violations                                                                                                                                                                                      ;
++----------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+; Rule name                                                                                    ; Name                                                                                                    ;
++----------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+; Rule C104: Clock signal source should drive only clock input ports                           ; ClockDivider:clk_divider|clk                                                                            ;
+;  Clock ports destination node(s) list                                                        ; RegFile:registerFile|data~509                                                                           ;
+;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[7]                                                                                  ;
+;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[8]                                                                                  ;
+;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[10]                                                                                 ;
+;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[12]                                                                                 ;
+;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[6]                                                                                  ;
+;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[3]                                                                                  ;
+;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[2]                                                                                  ;
+;  Clock ports destination node(s) list                                                        ; RegFile:registerFile|data~354                                                                           ;
+;  Clock ports destination node(s) list                                                        ; Register:pc|dataOut[5]                                                                                  ;
+;  Non-clock ports destination node(s) list                                                    ; ClockDivider:clk_divider|clk~0                                                                          ;
+; Rule C106: Clock signal source should not drive registers triggered by different clock edges ; ClockDivider:clk_divider|clk                                                                            ;
+;  Positive edge destination node(s) list                                                      ; RegFile:registerFile|data~509                                                                           ;
+;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[7]                                                                                  ;
+;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[8]                                                                                  ;
+;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[10]                                                                                 ;
+;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[12]                                                                                 ;
+;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[6]                                                                                  ;
+;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[3]                                                                                  ;
+;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[2]                                                                                  ;
+;  Positive edge destination node(s) list                                                      ; RegFile:registerFile|data~354                                                                           ;
+;  Positive edge destination node(s) list                                                      ; Register:pc|dataOut[5]                                                                                  ;
+;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a0~porta_datain_reg4  ;
+;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a3~porta_address_reg4 ;
+;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a3~porta_address_reg5 ;
+;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a3~porta_address_reg6 ;
+;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a3~porta_address_reg7 ;
+;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a3~porta_address_reg0 ;
+;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a3~porta_address_reg1 ;
+;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a3~porta_address_reg2 ;
+;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a3~porta_address_reg3 ;
+;  Negative edge destination node(s) list                                                      ; DataMemory:dataMem|altsyncram:data_rtl_0|altsyncram_7mc1:auto_generated|ram_block1a3~porta_address_reg8 ;
++----------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------+
@@ -513,93 +156,103 @@ applicable agreement for further details.
 +------------------------------------------------------------------+--------------------------------------+---------+
 ; Rule name                                                        ; Name                                 ; Fan-Out ;
 +------------------------------------------------------------------+--------------------------------------+---------+
-; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Selector3~2       ; 80      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[3]               ; 83      ;
 ; Rule T101: Nodes with more than the specified number of fan-outs ; ClockDivider:clk_divider|clk~CLKENA0 ; 591     ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[2]               ; 82      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[6]               ; 79      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Decoder1~1        ; 51      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[9]               ; 60      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Mux4~0            ; 76      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[8]               ; 76      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~686        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[4]               ; 83      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[12]              ; 55      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Mux3~0            ; 74      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; ClockDivider:clk_divider|Equal0~6    ; 33      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; CLOCK_50~inputCLKENA0                ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~879        ; 32      ;
 ; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[7]               ; 77      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[5]               ; 88      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Selector1~0       ; 80      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Selector0~0       ; 80      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~685        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~677        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~681        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~689        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Selector2~0       ; 80      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~688        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~676        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~680        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~684        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~687        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~679        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~683        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~675        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~682        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~674        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~678        ; 32      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Selector7~1       ; 80      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Selector6~0       ; 80      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Selector4~0       ; 80      ;
-; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Selector5~0       ; 80      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Mux4~0            ; 73      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[8]               ; 75      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; InstMemory:instMem|data~0            ; 44      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[12]              ; 63      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Decoder1~1        ; 82      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[6]               ; 80      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[3]               ; 83      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; ALU:mainALU|Mux26~0                  ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[2]               ; 80      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~878        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[5]               ; 86      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Mux3~0            ; 74      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[4]               ; 83      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~871        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Register:pc|dataOut[9]               ; 61      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~866        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|WideOr12~0        ; 84      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Mux8~2            ; 80      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~864        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; ALU:mainALU|Mux4~1                   ; 34      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~877        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|WideOr12~1        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~876        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Selector0~1       ; 80      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Selector1~1       ; 80      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~873        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~874        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~872        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~875        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~865        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~867        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Selector3~2       ; 80      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~869        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~868        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; RegFile:registerFile|data~870        ; 32      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Selector2~3       ; 80      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Mux5~0            ; 80      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; InstMemory:instMem|data~67           ; 34      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Mux6~0            ; 80      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Controller:control|Mux7~0            ; 80      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Multiplexer:alumux|Mux25~0           ; 114     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; Multiplexer:alumux|Mux2~0            ; 31      ;
 ; Rule T102: Top nodes with the highest number of fan-outs         ; ClockDivider:clk_divider|clk~CLKENA0 ; 591     ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[5]               ; 88      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[4]               ; 83      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Multiplexer:alumux|Mux25~0           ; 114     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[5]               ; 86      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|WideOr12~0        ; 84      ;
 ; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[3]               ; 83      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[2]               ; 82      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Selector6~0       ; 80      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Selector5~0       ; 80      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Selector1~0       ; 80      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[4]               ; 83      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Decoder1~1        ; 82      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[2]               ; 80      ;
 ; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Selector3~2       ; 80      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Selector2~0       ; 80      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Selector0~0       ; 80      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Selector7~1       ; 80      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Selector4~0       ; 80      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[6]               ; 79      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Selector2~3       ; 80      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Mux8~2            ; 80      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Mux5~0            ; 80      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Mux6~0            ; 80      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Selector0~1       ; 80      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Mux7~0            ; 80      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Selector1~1       ; 80      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[6]               ; 80      ;
 ; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[7]               ; 77      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[8]               ; 76      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Mux4~0            ; 76      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[8]               ; 75      ;
 ; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Mux3~0            ; 74      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[9]               ; 60      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[12]              ; 55      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Decoder1~1        ; 51      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~681        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~683        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~679        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~685        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~682        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~678        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~675        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~676        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~686        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~684        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~689        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~688        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~680        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~687        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~677        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~674        ; 32      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[2]~0             ; 30      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; ALU:mainALU|Mux4~4                   ; 30      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|WideOr12~0        ; 30      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; InstMemory:instMem|data~121          ; 30      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; ClockDivider:clk_divider|Equal0~5    ; 27      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; InstMemory:instMem|data~4            ; 27      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; CLOCK_50~inputCLKENA0                ; 27      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Multiplexer:regmux|Mux0~3            ; 25      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Multiplexer:regmux|Mux31~5           ; 24      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Multiplexer:regmux|Mux20~1           ; 24      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Multiplexer:regmux|Mux21~1           ; 24      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Multiplexer:regmux|Mux28~2           ; 24      ;
-; Rule T102: Top nodes with the highest number of fan-outs         ; Multiplexer:regmux|Mux18~1           ; 24      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Mux4~0            ; 73      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[12]              ; 63      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Register:pc|dataOut[9]               ; 61      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; InstMemory:instMem|data~0            ; 44      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; InstMemory:instMem|data~67           ; 34      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; ALU:mainALU|Mux4~1                   ; 34      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; ClockDivider:clk_divider|Equal0~6    ; 33      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~871        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~868        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; CLOCK_50~inputCLKENA0                ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~878        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; ALU:mainALU|Mux26~0                  ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~879        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~874        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~869        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~870        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~867        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~877        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~866        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~873        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|WideOr12~1        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~864        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~875        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~872        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~876        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RegFile:registerFile|data~865        ; 32      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Multiplexer:alumux|Mux2~0            ; 31      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; InstMemory:instMem|data~79           ; 30      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; InstMemory:instMem|data~140          ; 30      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; Controller:control|Decoder1~3        ; 24      ;
 +------------------------------------------------------------------+--------------------------------------+---------+
 
 
@@ -609,1107 +262,17 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Design Assistant
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 01 23:56:49 2016
+    Info: Processing started: Wed Nov 02 22:16:16 2016
 Info: Command: quartus_drc --read_settings_files=off --write_settings_files=off Project2 -c Project2
 Warning (335093): TimeQuest Timing Analyzer is analyzing 1 combinational loops as latches.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Project2.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
-Warning (332125): Found combinational loop of 1087 nodes
-    Warning (332126): Node "mainALU|Add1~1|sharein"
-    Warning (332126): Node "mainALU|Add1~1|sumout"
-    Warning (332126): Node "mainALU|Mux30~4|datad"
-    Warning (332126): Node "mainALU|Mux30~4|combout"
-    Warning (332126): Node "regmux|Mux28~2|datab"
-    Warning (332126): Node "regmux|Mux28~2|combout"
-    Warning (332126): Node "mainALU|Add1~1|dataa"
-    Warning (332126): Node "mainALU|Add1~1|cout"
-    Warning (332126): Node "mainALU|Add1~17|cin"
-    Warning (332126): Node "mainALU|Add1~17|cout"
-    Warning (332126): Node "mainALU|Add1~21|cin"
-    Warning (332126): Node "mainALU|Add1~21|cout"
-    Warning (332126): Node "mainALU|Add1~25|cin"
-    Warning (332126): Node "mainALU|Add1~25|cout"
-    Warning (332126): Node "mainALU|Add1~29|cin"
-    Warning (332126): Node "mainALU|Add1~29|cout"
-    Warning (332126): Node "mainALU|Add1~13|cin"
-    Warning (332126): Node "mainALU|Add1~13|cout"
-    Warning (332126): Node "mainALU|Add1~9|cin"
-    Warning (332126): Node "mainALU|Add1~9|cout"
-    Warning (332126): Node "mainALU|Add1~33|cin"
-    Warning (332126): Node "mainALU|Add1~33|cout"
-    Warning (332126): Node "mainALU|Add1~37|cin"
-    Warning (332126): Node "mainALU|Add1~37|cout"
-    Warning (332126): Node "mainALU|Add1~5|cin"
-    Warning (332126): Node "mainALU|Add1~5|cout"
-    Warning (332126): Node "mainALU|Add1~61|cin"
-    Warning (332126): Node "mainALU|Add1~61|cout"
-    Warning (332126): Node "mainALU|Add1~65|cin"
-    Warning (332126): Node "mainALU|Add1~65|cout"
-    Warning (332126): Node "mainALU|Add1~69|cin"
-    Warning (332126): Node "mainALU|Add1~69|cout"
-    Warning (332126): Node "mainALU|Add1~113|cin"
-    Warning (332126): Node "mainALU|Add1~113|cout"
-    Warning (332126): Node "mainALU|Add1~117|cin"
-    Warning (332126): Node "mainALU|Add1~117|cout"
-    Warning (332126): Node "mainALU|Add1~105|cin"
-    Warning (332126): Node "mainALU|Add1~105|cout"
-    Warning (332126): Node "mainALU|Add1~109|cin"
-    Warning (332126): Node "mainALU|Add1~109|cout"
-    Warning (332126): Node "mainALU|Add1~97|cin"
-    Warning (332126): Node "mainALU|Add1~97|cout"
-    Warning (332126): Node "mainALU|Add1~101|cin"
-    Warning (332126): Node "mainALU|Add1~101|cout"
-    Warning (332126): Node "mainALU|Add1~73|cin"
-    Warning (332126): Node "mainALU|Add1~73|cout"
-    Warning (332126): Node "mainALU|Add1~77|cin"
-    Warning (332126): Node "mainALU|Add1~77|cout"
-    Warning (332126): Node "mainALU|Add1~81|cin"
-    Warning (332126): Node "mainALU|Add1~81|cout"
-    Warning (332126): Node "mainALU|Add1~85|cin"
-    Warning (332126): Node "mainALU|Add1~85|cout"
-    Warning (332126): Node "mainALU|Add1~89|cin"
-    Warning (332126): Node "mainALU|Add1~89|cout"
-    Warning (332126): Node "mainALU|Add1~93|cin"
-    Warning (332126): Node "mainALU|Add1~93|cout"
-    Warning (332126): Node "mainALU|Add1~57|cin"
-    Warning (332126): Node "mainALU|Add1~57|cout"
-    Warning (332126): Node "mainALU|Add1~45|cin"
-    Warning (332126): Node "mainALU|Add1~45|cout"
-    Warning (332126): Node "mainALU|Add1~121|cin"
-    Warning (332126): Node "mainALU|Add1~121|cout"
-    Warning (332126): Node "mainALU|Add1~125|cin"
-    Warning (332126): Node "mainALU|Add1~125|sumout"
-    Warning (332126): Node "mainALU|Mux2~0|dataa"
-    Warning (332126): Node "mainALU|Mux2~0|combout"
-    Warning (332126): Node "regmux|Mux0~3|datae"
-    Warning (332126): Node "regmux|Mux0~3|combout"
-    Warning (332126): Node "mainALU|LessThan0~24|datab"
-    Warning (332126): Node "mainALU|LessThan0~24|combout"
-    Warning (332126): Node "mainALU|Mux33~8|datab"
-    Warning (332126): Node "mainALU|Mux33~8|combout"
-    Warning (332126): Node "mainALU|Mux33~12|dataa"
-    Warning (332126): Node "mainALU|Mux33~12|combout"
-    Warning (332126): Node "regmux|Mux31~5|dataf"
-    Warning (332126): Node "regmux|Mux31~5|combout"
-    Warning (332126): Node "mainALU|Add1~49|datab"
-    Warning (332126): Node "mainALU|Add1~49|sumout"
-    Warning (332126): Node "mainALU|Mux33~10|datab"
-    Warning (332126): Node "mainALU|Mux33~10|combout"
-    Warning (332126): Node "mainALU|Mux33~11|datac"
-    Warning (332126): Node "mainALU|Mux33~11|combout"
-    Warning (332126): Node "mainALU|Mux33~12|datab"
-    Warning (332126): Node "mainALU|Add1~49|shareout"
-    Warning (332126): Node "mainALU|Add1~53|sharein"
-    Warning (332126): Node "mainALU|Add1~53|sumout"
-    Warning (332126): Node "mainALU|Mux32~0|datae"
-    Warning (332126): Node "mainALU|Mux32~0|combout"
-    Warning (332126): Node "mainALU|Mux32~2|datac"
-    Warning (332126): Node "mainALU|Mux32~2|combout"
-    Warning (332126): Node "regmux|Mux30~2|datac"
-    Warning (332126): Node "regmux|Mux30~2|combout"
-    Warning (332126): Node "mainALU|Add0~53|dataa"
-    Warning (332126): Node "mainALU|Add0~53|sumout"
-    Warning (332126): Node "mainALU|Mux32~0|datab"
-    Warning (332126): Node "mainALU|Add0~53|cout"
-    Warning (332126): Node "mainALU|Add0~41|cin"
-    Warning (332126): Node "mainALU|Add0~41|cout"
-    Warning (332126): Node "mainALU|Add0~1|cin"
-    Warning (332126): Node "mainALU|Add0~1|cout"
-    Warning (332126): Node "mainALU|Add0~17|cin"
-    Warning (332126): Node "mainALU|Add0~17|cout"
-    Warning (332126): Node "mainALU|Add0~21|cin"
-    Warning (332126): Node "mainALU|Add0~21|cout"
-    Warning (332126): Node "mainALU|Add0~25|cin"
-    Warning (332126): Node "mainALU|Add0~25|cout"
-    Warning (332126): Node "mainALU|Add0~29|cin"
-    Warning (332126): Node "mainALU|Add0~29|cout"
-    Warning (332126): Node "mainALU|Add0~13|cin"
-    Warning (332126): Node "mainALU|Add0~13|cout"
-    Warning (332126): Node "mainALU|Add0~9|cin"
-    Warning (332126): Node "mainALU|Add0~9|cout"
-    Warning (332126): Node "mainALU|Add0~33|cin"
-    Warning (332126): Node "mainALU|Add0~33|cout"
-    Warning (332126): Node "mainALU|Add0~37|cin"
-    Warning (332126): Node "mainALU|Add0~37|cout"
-    Warning (332126): Node "mainALU|Add0~5|cin"
-    Warning (332126): Node "mainALU|Add0~5|cout"
-    Warning (332126): Node "mainALU|Add0~61|cin"
-    Warning (332126): Node "mainALU|Add0~61|cout"
-    Warning (332126): Node "mainALU|Add0~65|cin"
-    Warning (332126): Node "mainALU|Add0~65|cout"
-    Warning (332126): Node "mainALU|Add0~69|cin"
-    Warning (332126): Node "mainALU|Add0~69|cout"
-    Warning (332126): Node "mainALU|Add0~113|cin"
-    Warning (332126): Node "mainALU|Add0~113|cout"
-    Warning (332126): Node "mainALU|Add0~117|cin"
-    Warning (332126): Node "mainALU|Add0~117|cout"
-    Warning (332126): Node "mainALU|Add0~105|cin"
-    Warning (332126): Node "mainALU|Add0~105|cout"
-    Warning (332126): Node "mainALU|Add0~109|cin"
-    Warning (332126): Node "mainALU|Add0~109|cout"
-    Warning (332126): Node "mainALU|Add0~97|cin"
-    Warning (332126): Node "mainALU|Add0~97|cout"
-    Warning (332126): Node "mainALU|Add0~101|cin"
-    Warning (332126): Node "mainALU|Add0~101|cout"
-    Warning (332126): Node "mainALU|Add0~73|cin"
-    Warning (332126): Node "mainALU|Add0~73|cout"
-    Warning (332126): Node "mainALU|Add0~77|cin"
-    Warning (332126): Node "mainALU|Add0~77|cout"
-    Warning (332126): Node "mainALU|Add0~81|cin"
-    Warning (332126): Node "mainALU|Add0~81|cout"
-    Warning (332126): Node "mainALU|Add0~85|cin"
-    Warning (332126): Node "mainALU|Add0~85|cout"
-    Warning (332126): Node "mainALU|Add0~89|cin"
-    Warning (332126): Node "mainALU|Add0~89|cout"
-    Warning (332126): Node "mainALU|Add0~93|cin"
-    Warning (332126): Node "mainALU|Add0~93|cout"
-    Warning (332126): Node "mainALU|Add0~57|cin"
-    Warning (332126): Node "mainALU|Add0~57|cout"
-    Warning (332126): Node "mainALU|Add0~45|cin"
-    Warning (332126): Node "mainALU|Add0~45|cout"
-    Warning (332126): Node "mainALU|Add0~121|cin"
-    Warning (332126): Node "mainALU|Add0~121|cout"
-    Warning (332126): Node "mainALU|Add0~125|cin"
-    Warning (332126): Node "mainALU|Add0~125|sumout"
-    Warning (332126): Node "mainALU|Mux2~0|datae"
-    Warning (332126): Node "mainALU|Add0~121|sumout"
-    Warning (332126): Node "mainALU|Mux3~0|dataa"
-    Warning (332126): Node "mainALU|Mux3~0|combout"
-    Warning (332126): Node "regmux|Mux1~2|dataa"
-    Warning (332126): Node "regmux|Mux1~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~24|datad"
-    Warning (332126): Node "mainALU|LessThan1~25|dataa"
-    Warning (332126): Node "mainALU|LessThan1~25|combout"
-    Warning (332126): Node "mainALU|LessThan1~26|datab"
-    Warning (332126): Node "mainALU|LessThan1~26|combout"
-    Warning (332126): Node "mainALU|Mux33~11|dataa"
-    Warning (332126): Node "mainALU|Mux33~6|datac"
-    Warning (332126): Node "mainALU|Mux33~6|combout"
-    Warning (332126): Node "mainALU|Mux33~12|datad"
-    Warning (332126): Node "mainALU|LessThan1~24|dataa"
-    Warning (332126): Node "mainALU|LessThan1~24|combout"
-    Warning (332126): Node "mainALU|LessThan1~26|datae"
-    Warning (332126): Node "mainALU|Equal0~8|datad"
-    Warning (332126): Node "mainALU|Equal0~8|combout"
-    Warning (332126): Node "mainALU|LessThan0~25|datac"
-    Warning (332126): Node "mainALU|LessThan0~25|combout"
-    Warning (332126): Node "mainALU|Mux33~8|dataa"
-    Warning (332126): Node "mainALU|Mux33~3|dataa"
-    Warning (332126): Node "mainALU|Mux33~3|combout"
-    Warning (332126): Node "mainALU|Mux33~6|dataa"
-    Warning (332126): Node "mainALU|Equal0~9|datac"
-    Warning (332126): Node "mainALU|Equal0~9|combout"
-    Warning (332126): Node "mainALU|Equal0~10|datae"
-    Warning (332126): Node "mainALU|Equal0~10|combout"
-    Warning (332126): Node "mainALU|Mux33~8|datad"
-    Warning (332126): Node "mainALU|Mux33~2|datad"
-    Warning (332126): Node "mainALU|Mux33~2|combout"
-    Warning (332126): Node "mainALU|Mux33~6|datad"
-    Warning (332126): Node "mainALU|Mux3~0|datac"
-    Warning (332126): Node "mainALU|Add1~121|datad"
-    Warning (332126): Node "mainALU|Add1~121|sumout"
-    Warning (332126): Node "mainALU|Mux3~0|datad"
-    Warning (332126): Node "mainALU|Add1~121|shareout"
-    Warning (332126): Node "mainALU|Add1~125|sharein"
-    Warning (332126): Node "mainALU|Mux3~1|dataa"
-    Warning (332126): Node "mainALU|Mux3~1|combout"
-    Warning (332126): Node "mainALU|Mux3~2|datab"
-    Warning (332126): Node "mainALU|Mux3~2|combout"
-    Warning (332126): Node "regmux|Mux1~2|datad"
-    Warning (332126): Node "mainALU|Add0~121|dataf"
-    Warning (332126): Node "mainALU|Add0~45|sumout"
-    Warning (332126): Node "mainALU|Mux4~1|datae"
-    Warning (332126): Node "mainALU|Mux4~1|combout"
-    Warning (332126): Node "mainALU|Mux4~3|dataa"
-    Warning (332126): Node "mainALU|Mux4~3|combout"
-    Warning (332126): Node "regmux|Mux2~0|datad"
-    Warning (332126): Node "regmux|Mux2~0|combout"
-    Warning (332126): Node "mainALU|Mux4~1|datab"
-    Warning (332126): Node "mainALU|Mux4~2|datae"
-    Warning (332126): Node "mainALU|Mux4~2|combout"
-    Warning (332126): Node "mainALU|Mux4~3|datac"
-    Warning (332126): Node "mainALU|LessThan0~24|dataa"
-    Warning (332126): Node "mainALU|LessThan1~25|datad"
-    Warning (332126): Node "mainALU|LessThan1~24|datad"
-    Warning (332126): Node "mainALU|Equal0~8|dataa"
-    Warning (332126): Node "mainALU|Add0~45|datac"
-    Warning (332126): Node "mainALU|Add1~45|datac"
-    Warning (332126): Node "mainALU|Add1~45|sumout"
-    Warning (332126): Node "mainALU|Mux4~1|datad"
-    Warning (332126): Node "mainALU|Add1~45|shareout"
-    Warning (332126): Node "mainALU|Add1~121|sharein"
-    Warning (332126): Node "regmux|Mux29~1|datab"
-    Warning (332126): Node "regmux|Mux29~1|combout"
-    Warning (332126): Node "mainALU|Mux31~4|datad"
-    Warning (332126): Node "mainALU|Mux31~4|combout"
-    Warning (332126): Node "mainALU|Mux31~5|dataa"
-    Warning (332126): Node "mainALU|Mux31~5|combout"
-    Warning (332126): Node "regmux|Mux29~1|datac"
-    Warning (332126): Node "regmux|Mux31~3|dataa"
-    Warning (332126): Node "regmux|Mux31~3|combout"
-    Warning (332126): Node "regmux|Mux30~1|dataa"
-    Warning (332126): Node "regmux|Mux30~1|combout"
-    Warning (332126): Node "regmux|Mux30~2|datae"
-    Warning (332126): Node "regmux|Mux31~4|datac"
-    Warning (332126): Node "regmux|Mux31~4|combout"
-    Warning (332126): Node "regmux|Mux31~5|datac"
-    Warning (332126): Node "regmux|Mux28~1|dataa"
-    Warning (332126): Node "regmux|Mux28~1|combout"
-    Warning (332126): Node "regmux|Mux28~2|datae"
-    Warning (332126): Node "regmux|Mux27~1|datae"
-    Warning (332126): Node "regmux|Mux27~1|combout"
-    Warning (332126): Node "regmux|Mux26~2|datab"
-    Warning (332126): Node "regmux|Mux26~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~7|datac"
-    Warning (332126): Node "mainALU|LessThan0~7|combout"
-    Warning (332126): Node "mainALU|LessThan0~10|datad"
-    Warning (332126): Node "mainALU|LessThan0~10|combout"
-    Warning (332126): Node "mainALU|LessThan0~20|datad"
-    Warning (332126): Node "mainALU|LessThan0~20|combout"
-    Warning (332126): Node "mainALU|LessThan0~25|datad"
-    Warning (332126): Node "mainALU|Mux33~3|datab"
-    Warning (332126): Node "mainALU|LessThan1~7|datad"
-    Warning (332126): Node "mainALU|LessThan1~7|combout"
-    Warning (332126): Node "mainALU|LessThan1~10|dataf"
-    Warning (332126): Node "mainALU|LessThan1~10|combout"
-    Warning (332126): Node "mainALU|LessThan1~20|dataa"
-    Warning (332126): Node "mainALU|LessThan1~20|combout"
-    Warning (332126): Node "mainALU|LessThan1~26|datac"
-    Warning (332126): Node "mainALU|Equal0~5|datad"
-    Warning (332126): Node "mainALU|Equal0~5|combout"
-    Warning (332126): Node "mainALU|LessThan0~6|datac"
-    Warning (332126): Node "mainALU|LessThan0~6|combout"
-    Warning (332126): Node "mainALU|LessThan0~20|dataf"
-    Warning (332126): Node "mainALU|LessThan1~6|datae"
-    Warning (332126): Node "mainALU|LessThan1~6|combout"
-    Warning (332126): Node "mainALU|LessThan1~20|datad"
-    Warning (332126): Node "mainALU|Equal0~6|datae"
-    Warning (332126): Node "mainALU|Equal0~6|combout"
-    Warning (332126): Node "mainALU|Equal0~10|datab"
-    Warning (332126): Node "mainALU|Mux33~2|dataa"
-    Warning (332126): Node "mainALU|Mux12~2|dataa"
-    Warning (332126): Node "mainALU|Mux12~2|combout"
-    Warning (332126): Node "regmux|Mux10~3|datac"
-    Warning (332126): Node "regmux|Mux10~3|combout"
-    Warning (332126): Node "mainALU|LessThan0~15|datab"
-    Warning (332126): Node "mainALU|LessThan0~15|combout"
-    Warning (332126): Node "mainALU|LessThan0~16|datad"
-    Warning (332126): Node "mainALU|LessThan0~16|combout"
-    Warning (332126): Node "mainALU|LessThan0~20|datae"
-    Warning (332126): Node "mainALU|LessThan1~15|datab"
-    Warning (332126): Node "mainALU|LessThan1~15|combout"
-    Warning (332126): Node "mainALU|LessThan1~16|datac"
-    Warning (332126): Node "mainALU|LessThan1~16|combout"
-    Warning (332126): Node "mainALU|LessThan1~20|datab"
-    Warning (332126): Node "mainALU|LessThan0~0|datac"
-    Warning (332126): Node "mainALU|LessThan0~0|combout"
-    Warning (332126): Node "mainALU|LessThan0~19|datab"
-    Warning (332126): Node "mainALU|LessThan0~19|combout"
-    Warning (332126): Node "mainALU|LessThan0~20|dataa"
-    Warning (332126): Node "mainALU|LessThan0~12|datab"
-    Warning (332126): Node "mainALU|LessThan0~12|combout"
-    Warning (332126): Node "mainALU|LessThan0~20|datab"
-    Warning (332126): Node "mainALU|LessThan0~16|datab"
-    Warning (332126): Node "mainALU|LessThan1~16|datab"
-    Warning (332126): Node "mainALU|LessThan1~12|datab"
-    Warning (332126): Node "mainALU|LessThan1~12|combout"
-    Warning (332126): Node "mainALU|LessThan1~20|datac"
-    Warning (332126): Node "mainALU|LessThan1~19|datab"
-    Warning (332126): Node "mainALU|LessThan1~19|combout"
-    Warning (332126): Node "mainALU|LessThan1~20|datae"
-    Warning (332126): Node "mainALU|Equal0~3|datab"
-    Warning (332126): Node "mainALU|Equal0~3|combout"
-    Warning (332126): Node "mainALU|Equal0~10|dataf"
-    Warning (332126): Node "mainALU|LessThan0~20|datac"
-    Warning (332126): Node "mainALU|LessThan1~20|dataf"
-    Warning (332126): Node "mainALU|Mux33~2|datac"
-    Warning (332126): Node "mainALU|Mux12~0|datab"
-    Warning (332126): Node "mainALU|Mux12~0|combout"
-    Warning (332126): Node "regmux|Mux10~3|datad"
-    Warning (332126): Node "mainALU|Mux12~1|datab"
-    Warning (332126): Node "mainALU|Mux12~1|combout"
-    Warning (332126): Node "mainALU|Mux12~2|datac"
-    Warning (332126): Node "mainALU|Add0~101|datac"
-    Warning (332126): Node "mainALU|Add0~101|sumout"
-    Warning (332126): Node "mainALU|Mux12~0|datac"
-    Warning (332126): Node "mainALU|Add1~101|dataa"
-    Warning (332126): Node "mainALU|Add1~101|sumout"
-    Warning (332126): Node "mainALU|Mux12~0|datad"
-    Warning (332126): Node "mainALU|Add1~101|shareout"
-    Warning (332126): Node "mainALU|Add1~73|sharein"
-    Warning (332126): Node "mainALU|Add1~73|sumout"
-    Warning (332126): Node "mainALU|Mux11~0|datac"
-    Warning (332126): Node "mainALU|Mux11~0|combout"
-    Warning (332126): Node "regmux|Mux9~2|dataa"
-    Warning (332126): Node "regmux|Mux9~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~23|dataa"
-    Warning (332126): Node "mainALU|LessThan0~23|combout"
-    Warning (332126): Node "mainALU|LessThan0~25|dataf"
-    Warning (332126): Node "mainALU|Mux33~3|datad"
-    Warning (332126): Node "mainALU|LessThan1~23|dataa"
-    Warning (332126): Node "mainALU|LessThan1~23|combout"
-    Warning (332126): Node "mainALU|LessThan1~26|dataf"
-    Warning (332126): Node "mainALU|Equal0~0|dataf"
-    Warning (332126): Node "mainALU|Equal0~0|combout"
-    Warning (332126): Node "mainALU|LessThan0~25|datab"
-    Warning (332126): Node "mainALU|Equal0~10|datad"
-    Warning (332126): Node "mainALU|Mux33~3|datac"
-    Warning (332126): Node "mainALU|LessThan1~26|dataa"
-    Warning (332126): Node "mainALU|Mux33~2|datab"
-    Warning (332126): Node "mainALU|Add1~73|datab"
-    Warning (332126): Node "mainALU|Add1~73|shareout"
-    Warning (332126): Node "mainALU|Add1~77|sharein"
-    Warning (332126): Node "mainALU|Add1~77|sumout"
-    Warning (332126): Node "mainALU|Mux10~0|dataa"
-    Warning (332126): Node "mainALU|Mux10~0|combout"
-    Warning (332126): Node "regmux|Mux8~2|datae"
-    Warning (332126): Node "regmux|Mux8~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~23|datad"
-    Warning (332126): Node "mainALU|LessThan1~23|datab"
-    Warning (332126): Node "mainALU|calc~0|datac"
-    Warning (332126): Node "mainALU|calc~0|combout"
-    Warning (332126): Node "mainALU|Equal0~0|datad"
-    Warning (332126): Node "mainALU|Add0~77|dataa"
-    Warning (332126): Node "mainALU|Add0~77|sumout"
-    Warning (332126): Node "mainALU|Mux10~0|datab"
-    Warning (332126): Node "mainALU|Mux10~1|datac"
-    Warning (332126): Node "mainALU|Mux10~1|combout"
-    Warning (332126): Node "mainALU|Mux10~2|datad"
-    Warning (332126): Node "mainALU|Mux10~2|combout"
-    Warning (332126): Node "regmux|Mux8~2|datad"
-    Warning (332126): Node "mainALU|Add1~77|dataa"
-    Warning (332126): Node "mainALU|Add1~77|shareout"
-    Warning (332126): Node "mainALU|Add1~81|sharein"
-    Warning (332126): Node "mainALU|Add1~81|sumout"
-    Warning (332126): Node "mainALU|Mux9~0|dataa"
-    Warning (332126): Node "mainALU|Mux9~0|combout"
-    Warning (332126): Node "regmux|Mux7~2|dataa"
-    Warning (332126): Node "regmux|Mux7~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~22|datab"
-    Warning (332126): Node "mainALU|LessThan0~22|combout"
-    Warning (332126): Node "mainALU|LessThan0~23|datae"
-    Warning (332126): Node "mainALU|LessThan1~22|datad"
-    Warning (332126): Node "mainALU|LessThan1~22|combout"
-    Warning (332126): Node "mainALU|LessThan1~23|datad"
-    Warning (332126): Node "mainALU|calc~1|datac"
-    Warning (332126): Node "mainALU|calc~1|combout"
-    Warning (332126): Node "mainALU|LessThan1~2|dataf"
-    Warning (332126): Node "mainALU|LessThan1~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~23|datac"
-    Warning (332126): Node "mainALU|LessThan1~23|datac"
-    Warning (332126): Node "mainALU|Equal0~0|dataa"
-    Warning (332126): Node "mainALU|Add1~81|datad"
-    Warning (332126): Node "mainALU|Add1~81|shareout"
-    Warning (332126): Node "mainALU|Add1~85|sharein"
-    Warning (332126): Node "mainALU|Add1~85|sumout"
-    Warning (332126): Node "mainALU|Mux8~0|dataf"
-    Warning (332126): Node "mainALU|Mux8~0|combout"
-    Warning (332126): Node "regmux|Mux6~2|dataa"
-    Warning (332126): Node "regmux|Mux6~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~22|datad"
-    Warning (332126): Node "mainALU|LessThan1~22|dataa"
-    Warning (332126): Node "mainALU|calc~2|datad"
-    Warning (332126): Node "mainALU|calc~2|combout"
-    Warning (332126): Node "mainALU|LessThan1~2|datad"
-    Warning (332126): Node "mainALU|Equal0~0|datac"
-    Warning (332126): Node "mainALU|Add0~85|dataa"
-    Warning (332126): Node "mainALU|Add0~85|sumout"
-    Warning (332126): Node "mainALU|Mux8~0|datae"
-    Warning (332126): Node "mainALU|Mux8~0|dataa"
-    Warning (332126): Node "mainALU|Add1~85|dataa"
-    Warning (332126): Node "mainALU|Add1~85|shareout"
-    Warning (332126): Node "mainALU|Add1~89|sharein"
-    Warning (332126): Node "mainALU|Add1~89|sumout"
-    Warning (332126): Node "mainALU|Mux7~0|datac"
-    Warning (332126): Node "mainALU|Mux7~0|combout"
-    Warning (332126): Node "regmux|Mux5~2|datae"
-    Warning (332126): Node "regmux|Mux5~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~21|datab"
-    Warning (332126): Node "mainALU|LessThan0~21|combout"
-    Warning (332126): Node "mainALU|LessThan0~22|dataa"
-    Warning (332126): Node "mainALU|LessThan1~21|datad"
-    Warning (332126): Node "mainALU|LessThan1~21|combout"
-    Warning (332126): Node "mainALU|LessThan1~22|datae"
-    Warning (332126): Node "mainALU|LessThan1~0|datab"
-    Warning (332126): Node "mainALU|LessThan1~0|combout"
-    Warning (332126): Node "mainALU|LessThan0~22|datac"
-    Warning (332126): Node "mainALU|LessThan1~2|datac"
-    Warning (332126): Node "mainALU|LessThan1~22|dataf"
-    Warning (332126): Node "mainALU|Equal0~0|datab"
-    Warning (332126): Node "mainALU|Mux7~1|datac"
-    Warning (332126): Node "mainALU|Mux7~1|combout"
-    Warning (332126): Node "mainALU|Mux7~2|datae"
-    Warning (332126): Node "mainALU|Mux7~2|combout"
-    Warning (332126): Node "regmux|Mux5~2|datad"
-    Warning (332126): Node "mainALU|Mux7~0|dataa"
-    Warning (332126): Node "mainALU|Add1~89|datac"
-    Warning (332126): Node "mainALU|Add1~89|shareout"
-    Warning (332126): Node "mainALU|Add1~93|sharein"
-    Warning (332126): Node "mainALU|Add1~93|sumout"
-    Warning (332126): Node "mainALU|Mux6~0|datae"
-    Warning (332126): Node "mainALU|Mux6~0|combout"
-    Warning (332126): Node "regmux|Mux4~2|dataa"
-    Warning (332126): Node "regmux|Mux4~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~21|datac"
-    Warning (332126): Node "mainALU|LessThan1~21|dataa"
-    Warning (332126): Node "mainALU|LessThan1~0|datac"
-    Warning (332126): Node "mainALU|Mux6~1|datad"
-    Warning (332126): Node "mainALU|Mux6~1|combout"
-    Warning (332126): Node "mainALU|Mux6~2|dataa"
-    Warning (332126): Node "mainALU|Mux6~2|combout"
-    Warning (332126): Node "regmux|Mux4~2|datac"
-    Warning (332126): Node "mainALU|Add0~93|dataa"
-    Warning (332126): Node "mainALU|Add0~93|sumout"
-    Warning (332126): Node "mainALU|Mux6~0|dataa"
-    Warning (332126): Node "mainALU|Mux6~0|datab"
-    Warning (332126): Node "mainALU|Add1~93|dataa"
-    Warning (332126): Node "mainALU|Add1~93|shareout"
-    Warning (332126): Node "mainALU|Add1~57|sharein"
-    Warning (332126): Node "mainALU|Add1~57|sumout"
-    Warning (332126): Node "mainALU|Mux5~2|datab"
-    Warning (332126): Node "mainALU|Mux5~2|combout"
-    Warning (332126): Node "regmux|Mux3~2|datab"
-    Warning (332126): Node "regmux|Mux3~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~21|datad"
-    Warning (332126): Node "mainALU|LessThan1~21|datab"
-    Warning (332126): Node "mainALU|LessThan1~0|datad"
-    Warning (332126): Node "mainALU|Add0~57|dataa"
-    Warning (332126): Node "mainALU|Add0~57|sumout"
-    Warning (332126): Node "mainALU|Mux5~2|dataa"
-    Warning (332126): Node "mainALU|Add1~57|datab"
-    Warning (332126): Node "mainALU|Add1~57|shareout"
-    Warning (332126): Node "mainALU|Add1~45|sharein"
-    Warning (332126): Node "mainALU|Mux5~3|datad"
-    Warning (332126): Node "mainALU|Mux5~3|combout"
-    Warning (332126): Node "mainALU|Mux5~4|datad"
-    Warning (332126): Node "mainALU|Mux5~4|combout"
-    Warning (332126): Node "regmux|Mux3~2|dataa"
-    Warning (332126): Node "mainALU|Mux5~2|datad"
-    Warning (332126): Node "mainALU|Add0~89|datac"
-    Warning (332126): Node "mainALU|Add0~89|sumout"
-    Warning (332126): Node "mainALU|Mux7~0|datad"
-    Warning (332126): Node "mainALU|Mux8~1|datac"
-    Warning (332126): Node "mainALU|Mux8~1|combout"
-    Warning (332126): Node "mainALU|Mux8~2|datab"
-    Warning (332126): Node "mainALU|Mux8~2|combout"
-    Warning (332126): Node "regmux|Mux6~2|datac"
-    Warning (332126): Node "mainALU|Add0~81|datab"
-    Warning (332126): Node "mainALU|Add0~81|sumout"
-    Warning (332126): Node "mainALU|Mux9~0|datab"
-    Warning (332126): Node "mainALU|Mux9~0|datae"
-    Warning (332126): Node "mainALU|Mux9~1|datac"
-    Warning (332126): Node "mainALU|Mux9~1|combout"
-    Warning (332126): Node "mainALU|Mux9~2|datad"
-    Warning (332126): Node "mainALU|Mux9~2|combout"
-    Warning (332126): Node "regmux|Mux7~2|datab"
-    Warning (332126): Node "mainALU|Mux10~0|datad"
-    Warning (332126): Node "mainALU|Mux11~0|dataa"
-    Warning (332126): Node "mainALU|Add0~73|datac"
-    Warning (332126): Node "mainALU|Add0~73|sumout"
-    Warning (332126): Node "mainALU|Mux11~0|dataf"
-    Warning (332126): Node "mainALU|Mux11~1|datac"
-    Warning (332126): Node "mainALU|Mux11~1|combout"
-    Warning (332126): Node "mainALU|Mux11~2|datac"
-    Warning (332126): Node "mainALU|Mux11~2|combout"
-    Warning (332126): Node "regmux|Mux9~2|datad"
-    Warning (332126): Node "mainALU|Add1~21|dataa"
-    Warning (332126): Node "mainALU|Add1~21|sumout"
-    Warning (332126): Node "mainALU|Mux28~2|datac"
-    Warning (332126): Node "mainALU|Mux28~2|combout"
-    Warning (332126): Node "regmux|Mux26~2|datae"
-    Warning (332126): Node "mainALU|Add1~21|shareout"
-    Warning (332126): Node "mainALU|Add1~25|sharein"
-    Warning (332126): Node "mainALU|Add1~25|sumout"
-    Warning (332126): Node "mainALU|Mux27~2|datac"
-    Warning (332126): Node "mainALU|Mux27~2|combout"
-    Warning (332126): Node "regmux|Mux25~2|datac"
-    Warning (332126): Node "regmux|Mux25~2|combout"
-    Warning (332126): Node "mainALU|Mux27~0|datae"
-    Warning (332126): Node "mainALU|Mux27~0|combout"
-    Warning (332126): Node "regmux|Mux25~2|datad"
-    Warning (332126): Node "mainALU|Mux27~2|datad"
-    Warning (332126): Node "mainALU|LessThan0~8|dataa"
-    Warning (332126): Node "mainALU|LessThan0~8|combout"
-    Warning (332126): Node "mainALU|LessThan0~10|dataf"
-    Warning (332126): Node "mainALU|LessThan1~8|dataa"
-    Warning (332126): Node "mainALU|LessThan1~8|combout"
-    Warning (332126): Node "mainALU|LessThan1~10|datab"
-    Warning (332126): Node "mainALU|Equal0~4|datad"
-    Warning (332126): Node "mainALU|Equal0~4|combout"
-    Warning (332126): Node "mainALU|LessThan0~10|datac"
-    Warning (332126): Node "mainALU|LessThan0~6|dataf"
-    Warning (332126): Node "mainALU|LessThan1~10|dataa"
-    Warning (332126): Node "mainALU|LessThan1~6|datac"
-    Warning (332126): Node "mainALU|Equal0~6|datac"
-    Warning (332126): Node "mainALU|Mux11~2|datad"
-    Warning (332126): Node "mainALU|Add1~25|datad"
-    Warning (332126): Node "mainALU|Add1~25|shareout"
-    Warning (332126): Node "mainALU|Add1~29|sharein"
-    Warning (332126): Node "mainALU|Add1~29|sumout"
-    Warning (332126): Node "mainALU|Mux26~2|datac"
-    Warning (332126): Node "mainALU|Mux26~2|combout"
-    Warning (332126): Node "regmux|Mux24~2|datae"
-    Warning (332126): Node "regmux|Mux24~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~8|datad"
-    Warning (332126): Node "mainALU|LessThan1~8|datad"
-    Warning (332126): Node "mainALU|Equal0~4|datac"
-    Warning (332126): Node "mainALU|Mux10~2|datac"
-    Warning (332126): Node "mainALU|Mux26~0|datae"
-    Warning (332126): Node "mainALU|Mux26~0|combout"
-    Warning (332126): Node "regmux|Mux24~2|datab"
-    Warning (332126): Node "mainALU|Mux26~2|datab"
-    Warning (332126): Node "mainALU|Add1~29|dataa"
-    Warning (332126): Node "mainALU|Add1~29|shareout"
-    Warning (332126): Node "mainALU|Add1~13|sharein"
-    Warning (332126): Node "mainALU|Add1~13|sumout"
-    Warning (332126): Node "mainALU|Mux25~2|datac"
-    Warning (332126): Node "mainALU|Mux25~2|combout"
-    Warning (332126): Node "regmux|Mux23~2|datac"
-    Warning (332126): Node "regmux|Mux23~2|combout"
-    Warning (332126): Node "mainALU|Mux25~2|datab"
-    Warning (332126): Node "mainALU|Add0~13|datab"
-    Warning (332126): Node "mainALU|Add0~13|sumout"
-    Warning (332126): Node "mainALU|Mux25~2|datag"
-    Warning (332126): Node "mainALU|LessThan0~9|datae"
-    Warning (332126): Node "mainALU|LessThan0~9|combout"
-    Warning (332126): Node "mainALU|LessThan0~10|dataa"
-    Warning (332126): Node "mainALU|LessThan1~9|datad"
-    Warning (332126): Node "mainALU|LessThan1~9|combout"
-    Warning (332126): Node "mainALU|LessThan1~10|datac"
-    Warning (332126): Node "mainALU|LessThan1~1|datae"
-    Warning (332126): Node "mainALU|LessThan1~1|combout"
-    Warning (332126): Node "mainALU|LessThan0~10|datab"
-    Warning (332126): Node "mainALU|LessThan0~6|datab"
-    Warning (332126): Node "mainALU|LessThan1~10|datae"
-    Warning (332126): Node "mainALU|LessThan1~6|datad"
-    Warning (332126): Node "mainALU|Equal0~6|dataf"
-    Warning (332126): Node "mainALU|Mux9~2|datab"
-    Warning (332126): Node "mainALU|Mux25~0|dataf"
-    Warning (332126): Node "mainALU|Mux25~0|combout"
-    Warning (332126): Node "regmux|Mux23~2|datab"
-    Warning (332126): Node "mainALU|Add1~13|datab"
-    Warning (332126): Node "mainALU|Add1~13|shareout"
-    Warning (332126): Node "mainALU|Add1~9|sharein"
-    Warning (332126): Node "mainALU|Add1~9|sumout"
-    Warning (332126): Node "mainALU|Mux24~2|datac"
-    Warning (332126): Node "mainALU|Mux24~2|combout"
-    Warning (332126): Node "regmux|Mux22~2|datad"
-    Warning (332126): Node "regmux|Mux22~2|combout"
-    Warning (332126): Node "mainALU|Mux24~0|dataa"
-    Warning (332126): Node "mainALU|Mux24~0|combout"
-    Warning (332126): Node "regmux|Mux22~2|dataf"
-    Warning (332126): Node "mainALU|LessThan0~9|dataf"
-    Warning (332126): Node "mainALU|LessThan1~9|dataf"
-    Warning (332126): Node "mainALU|LessThan1~1|dataf"
-    Warning (332126): Node "mainALU|Mux8~2|datac"
-    Warning (332126): Node "mainALU|Mux24~2|datad"
-    Warning (332126): Node "mainALU|Add0~9|datac"
-    Warning (332126): Node "mainALU|Add0~9|sumout"
-    Warning (332126): Node "mainALU|Mux24~2|datag"
-    Warning (332126): Node "mainALU|Add1~9|datac"
-    Warning (332126): Node "mainALU|Add1~9|shareout"
-    Warning (332126): Node "mainALU|Add1~33|sharein"
-    Warning (332126): Node "mainALU|Add1~33|sumout"
-    Warning (332126): Node "mainALU|Mux23~2|datac"
-    Warning (332126): Node "mainALU|Mux23~2|combout"
-    Warning (332126): Node "regmux|Mux21~1|datad"
-    Warning (332126): Node "regmux|Mux21~1|combout"
-    Warning (332126): Node "mainALU|LessThan0~11|datad"
-    Warning (332126): Node "mainALU|LessThan0~11|combout"
-    Warning (332126): Node "mainALU|LessThan0~12|dataf"
-    Warning (332126): Node "mainALU|LessThan1~11|datae"
-    Warning (332126): Node "mainALU|LessThan1~11|combout"
-    Warning (332126): Node "mainALU|LessThan1~12|datad"
-    Warning (332126): Node "mainALU|Equal0~2|datac"
-    Warning (332126): Node "mainALU|Equal0~2|combout"
-    Warning (332126): Node "mainALU|Equal0~3|dataf"
-    Warning (332126): Node "mainALU|Mux7~2|datad"
-    Warning (332126): Node "mainALU|Mux23~2|datad"
-    Warning (332126): Node "mainALU|Add0~33|datad"
-    Warning (332126): Node "mainALU|Add0~33|sumout"
-    Warning (332126): Node "mainALU|Mux23~2|datag"
-    Warning (332126): Node "mainALU|Add1~33|datad"
-    Warning (332126): Node "mainALU|Add1~33|shareout"
-    Warning (332126): Node "mainALU|Add1~37|sharein"
-    Warning (332126): Node "mainALU|Add1~37|sumout"
-    Warning (332126): Node "mainALU|Mux22~2|datac"
-    Warning (332126): Node "mainALU|Mux22~2|combout"
-    Warning (332126): Node "regmux|Mux20~1|datad"
-    Warning (332126): Node "regmux|Mux20~1|combout"
-    Warning (332126): Node "mainALU|Mux22~2|datad"
-    Warning (332126): Node "mainALU|LessThan0~11|dataf"
-    Warning (332126): Node "mainALU|LessThan1~11|datad"
-    Warning (332126): Node "mainALU|Equal0~2|dataf"
-    Warning (332126): Node "mainALU|Mux6~2|datad"
-    Warning (332126): Node "mainALU|Mux22~0|datae"
-    Warning (332126): Node "mainALU|Mux22~0|combout"
-    Warning (332126): Node "regmux|Mux20~1|dataa"
-    Warning (332126): Node "mainALU|Add1~37|dataa"
-    Warning (332126): Node "mainALU|Add1~37|shareout"
-    Warning (332126): Node "mainALU|Add1~5|sharein"
-    Warning (332126): Node "mainALU|Add1~5|sumout"
-    Warning (332126): Node "mainALU|Mux21~2|datac"
-    Warning (332126): Node "mainALU|Mux21~2|combout"
-    Warning (332126): Node "regmux|Mux19~1|dataa"
-    Warning (332126): Node "regmux|Mux19~1|combout"
-    Warning (332126): Node "mainALU|Mux21~0|datac"
-    Warning (332126): Node "mainALU|Mux21~0|combout"
-    Warning (332126): Node "regmux|Mux19~1|datab"
-    Warning (332126): Node "mainALU|Mux21~2|datab"
-    Warning (332126): Node "mainALU|LessThan0~18|dataa"
-    Warning (332126): Node "mainALU|LessThan0~18|combout"
-    Warning (332126): Node "mainALU|LessThan0~19|dataf"
-    Warning (332126): Node "mainALU|LessThan1~18|datac"
-    Warning (332126): Node "mainALU|LessThan1~18|combout"
-    Warning (332126): Node "mainALU|LessThan1~19|dataf"
-    Warning (332126): Node "mainALU|LessThan0~3|dataa"
-    Warning (332126): Node "mainALU|LessThan0~3|combout"
-    Warning (332126): Node "mainALU|LessThan0~12|datae"
-    Warning (332126): Node "mainALU|LessThan1~12|datac"
-    Warning (332126): Node "mainALU|Equal0~3|datae"
-    Warning (332126): Node "mainALU|Mux5~4|dataa"
-    Warning (332126): Node "mainALU|Add1~5|datab"
-    Warning (332126): Node "mainALU|Add1~5|shareout"
-    Warning (332126): Node "mainALU|Add1~61|sharein"
-    Warning (332126): Node "mainALU|Add1~61|sumout"
-    Warning (332126): Node "mainALU|Mux20~1|datac"
-    Warning (332126): Node "mainALU|Mux20~1|combout"
-    Warning (332126): Node "regmux|Mux18~1|datad"
-    Warning (332126): Node "regmux|Mux18~1|combout"
-    Warning (332126): Node "mainALU|Mux20~0|datac"
-    Warning (332126): Node "mainALU|Mux20~0|combout"
-    Warning (332126): Node "regmux|Mux18~1|dataa"
-    Warning (332126): Node "mainALU|Mux20~1|dataa"
-    Warning (332126): Node "mainALU|LessThan0~18|datac"
-    Warning (332126): Node "mainALU|LessThan1~18|dataa"
-    Warning (332126): Node "mainALU|LessThan0~3|datad"
-    Warning (332126): Node "mainALU|Add1~61|datad"
-    Warning (332126): Node "mainALU|Add1~61|shareout"
-    Warning (332126): Node "mainALU|Add1~65|sharein"
-    Warning (332126): Node "mainALU|Add1~65|sumout"
-    Warning (332126): Node "mainALU|Mux19~1|datac"
-    Warning (332126): Node "mainALU|Mux19~1|combout"
-    Warning (332126): Node "regmux|Mux17~1|datab"
-    Warning (332126): Node "regmux|Mux17~1|combout"
-    Warning (332126): Node "mainALU|LessThan0~17|datac"
-    Warning (332126): Node "mainALU|LessThan0~17|combout"
-    Warning (332126): Node "mainALU|LessThan0~19|datae"
-    Warning (332126): Node "mainALU|LessThan1~17|datae"
-    Warning (332126): Node "mainALU|LessThan1~17|combout"
-    Warning (332126): Node "mainALU|LessThan1~19|datae"
-    Warning (332126): Node "mainALU|Equal0~1|datad"
-    Warning (332126): Node "mainALU|Equal0~1|combout"
-    Warning (332126): Node "mainALU|LessThan0~19|datad"
-    Warning (332126): Node "mainALU|LessThan0~12|datad"
-    Warning (332126): Node "mainALU|LessThan1~12|datae"
-    Warning (332126): Node "mainALU|LessThan1~19|datac"
-    Warning (332126): Node "mainALU|Equal0~3|datac"
-    Warning (332126): Node "mainALU|Mux3~2|datad"
-    Warning (332126): Node "mainALU|Mux19~0|datae"
-    Warning (332126): Node "mainALU|Mux19~0|combout"
-    Warning (332126): Node "regmux|Mux17~1|datad"
-    Warning (332126): Node "mainALU|Add1~65|datac"
-    Warning (332126): Node "mainALU|Add1~65|shareout"
-    Warning (332126): Node "mainALU|Add1~69|sharein"
-    Warning (332126): Node "mainALU|Add1~69|sumout"
-    Warning (332126): Node "mainALU|Mux18~1|datac"
-    Warning (332126): Node "mainALU|Mux18~1|combout"
-    Warning (332126): Node "regmux|Mux16~1|datab"
-    Warning (332126): Node "regmux|Mux16~1|combout"
-    Warning (332126): Node "mainALU|LessThan0~17|dataf"
-    Warning (332126): Node "mainALU|LessThan1~17|datac"
-    Warning (332126): Node "mainALU|Equal0~1|dataf"
-    Warning (332126): Node "mainALU|Mux2~2|dataa"
-    Warning (332126): Node "mainALU|Mux2~2|combout"
-    Warning (332126): Node "regmux|Mux0~3|datab"
-    Warning (332126): Node "mainALU|Add1~69|datab"
-    Warning (332126): Node "mainALU|Add1~69|shareout"
-    Warning (332126): Node "mainALU|Add1~113|sharein"
-    Warning (332126): Node "mainALU|Add1~113|sumout"
-    Warning (332126): Node "mainALU|Mux17~0|dataf"
-    Warning (332126): Node "mainALU|Mux17~0|combout"
-    Warning (332126): Node "regmux|Mux15~2|dataf"
-    Warning (332126): Node "regmux|Mux15~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~13|dataa"
-    Warning (332126): Node "mainALU|LessThan0~13|combout"
-    Warning (332126): Node "mainALU|LessThan0~16|datac"
-    Warning (332126): Node "mainALU|LessThan1~13|dataa"
-    Warning (332126): Node "mainALU|LessThan1~13|combout"
-    Warning (332126): Node "mainALU|LessThan1~16|dataf"
-    Warning (332126): Node "mainALU|LessThan0~2|dataa"
-    Warning (332126): Node "mainALU|LessThan0~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~19|dataa"
-    Warning (332126): Node "mainALU|LessThan0~12|dataa"
-    Warning (332126): Node "mainALU|LessThan1~12|dataf"
-    Warning (332126): Node "mainALU|LessThan1~19|dataa"
-    Warning (332126): Node "mainALU|Equal0~3|dataa"
-    Warning (332126): Node "mainALU|Mux17~0|datac"
-    Warning (332126): Node "mainALU|Mux17~1|dataa"
-    Warning (332126): Node "mainALU|Mux17~1|combout"
-    Warning (332126): Node "mainALU|Mux17~2|datab"
-    Warning (332126): Node "mainALU|Mux17~2|combout"
-    Warning (332126): Node "regmux|Mux15~2|datac"
-    Warning (332126): Node "mainALU|Add1~113|dataa"
-    Warning (332126): Node "mainALU|Add1~113|shareout"
-    Warning (332126): Node "mainALU|Add1~117|sharein"
-    Warning (332126): Node "mainALU|Add1~117|sumout"
-    Warning (332126): Node "mainALU|Mux16~0|datae"
-    Warning (332126): Node "mainALU|Mux16~0|combout"
-    Warning (332126): Node "regmux|Mux14~2|datac"
-    Warning (332126): Node "regmux|Mux14~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~13|datad"
-    Warning (332126): Node "mainALU|LessThan1~13|datad"
-    Warning (332126): Node "mainALU|LessThan0~2|datad"
-    Warning (332126): Node "mainALU|Add1~117|datad"
-    Warning (332126): Node "mainALU|Add1~117|shareout"
-    Warning (332126): Node "mainALU|Add1~105|sharein"
-    Warning (332126): Node "mainALU|Add1~105|sumout"
-    Warning (332126): Node "mainALU|Mux15~0|datad"
-    Warning (332126): Node "mainALU|Mux15~0|combout"
-    Warning (332126): Node "regmux|Mux13~2|dataf"
-    Warning (332126): Node "regmux|Mux13~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~14|datad"
-    Warning (332126): Node "mainALU|LessThan0~14|combout"
-    Warning (332126): Node "mainALU|LessThan0~16|dataf"
-    Warning (332126): Node "mainALU|LessThan1~14|datad"
-    Warning (332126): Node "mainALU|LessThan1~14|combout"
-    Warning (332126): Node "mainALU|LessThan1~16|datad"
-    Warning (332126): Node "mainALU|LessThan0~1|dataa"
-    Warning (332126): Node "mainALU|LessThan0~1|combout"
-    Warning (332126): Node "mainALU|LessThan0~19|datac"
-    Warning (332126): Node "mainALU|LessThan0~12|datac"
-    Warning (332126): Node "mainALU|LessThan0~16|dataa"
-    Warning (332126): Node "mainALU|LessThan1~16|dataa"
-    Warning (332126): Node "mainALU|LessThan1~12|dataa"
-    Warning (332126): Node "mainALU|LessThan1~19|datad"
-    Warning (332126): Node "mainALU|Equal0~3|datad"
-    Warning (332126): Node "mainALU|Mux15~0|datac"
-    Warning (332126): Node "mainALU|Mux15~1|dataa"
-    Warning (332126): Node "mainALU|Mux15~1|combout"
-    Warning (332126): Node "mainALU|Mux15~2|datac"
-    Warning (332126): Node "mainALU|Mux15~2|combout"
-    Warning (332126): Node "regmux|Mux13~2|datac"
-    Warning (332126): Node "mainALU|Add1~105|datac"
-    Warning (332126): Node "mainALU|Add1~105|shareout"
-    Warning (332126): Node "mainALU|Add1~109|sharein"
-    Warning (332126): Node "mainALU|Add1~109|sumout"
-    Warning (332126): Node "mainALU|Mux14~0|datac"
-    Warning (332126): Node "mainALU|Mux14~0|combout"
-    Warning (332126): Node "regmux|Mux12~2|datac"
-    Warning (332126): Node "regmux|Mux12~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~14|dataa"
-    Warning (332126): Node "mainALU|LessThan1~14|dataa"
-    Warning (332126): Node "mainALU|LessThan0~1|datad"
-    Warning (332126): Node "mainALU|Mux14~0|dataa"
-    Warning (332126): Node "mainALU|Add0~109|datab"
-    Warning (332126): Node "mainALU|Add0~109|sumout"
-    Warning (332126): Node "mainALU|Mux14~0|datab"
-    Warning (332126): Node "mainALU|Mux14~1|datac"
-    Warning (332126): Node "mainALU|Mux14~1|combout"
-    Warning (332126): Node "mainALU|Mux14~2|dataa"
-    Warning (332126): Node "mainALU|Mux14~2|combout"
-    Warning (332126): Node "regmux|Mux12~2|dataf"
-    Warning (332126): Node "mainALU|Add1~109|datac"
-    Warning (332126): Node "mainALU|Add1~109|shareout"
-    Warning (332126): Node "mainALU|Add1~97|sharein"
-    Warning (332126): Node "mainALU|Add1~97|sumout"
-    Warning (332126): Node "mainALU|Mux13~0|datad"
-    Warning (332126): Node "mainALU|Mux13~0|combout"
-    Warning (332126): Node "regmux|Mux11~2|datae"
-    Warning (332126): Node "regmux|Mux11~2|combout"
-    Warning (332126): Node "mainALU|LessThan0~15|dataa"
-    Warning (332126): Node "mainALU|LessThan1~15|dataa"
-    Warning (332126): Node "mainALU|LessThan0~0|dataa"
-    Warning (332126): Node "mainALU|Mux13~0|dataa"
-    Warning (332126): Node "mainALU|Mux13~1|dataa"
-    Warning (332126): Node "mainALU|Mux13~1|combout"
-    Warning (332126): Node "mainALU|Mux13~2|dataa"
-    Warning (332126): Node "mainALU|Mux13~2|combout"
-    Warning (332126): Node "regmux|Mux11~2|datad"
-    Warning (332126): Node "mainALU|Add0~97|dataf"
-    Warning (332126): Node "mainALU|Add0~97|sumout"
-    Warning (332126): Node "mainALU|Mux13~0|datab"
-    Warning (332126): Node "mainALU|Add1~97|datac"
-    Warning (332126): Node "mainALU|Add1~97|shareout"
-    Warning (332126): Node "mainALU|Add1~101|sharein"
-    Warning (332126): Node "mainALU|Add0~105|datac"
-    Warning (332126): Node "mainALU|Add0~105|sumout"
-    Warning (332126): Node "mainALU|Mux15~0|datae"
-    Warning (332126): Node "mainALU|Add0~117|dataa"
-    Warning (332126): Node "mainALU|Add0~117|sumout"
-    Warning (332126): Node "mainALU|Mux16~0|datab"
-    Warning (332126): Node "mainALU|Mux16~0|datac"
-    Warning (332126): Node "mainALU|Mux16~1|datad"
-    Warning (332126): Node "mainALU|Mux16~1|combout"
-    Warning (332126): Node "mainALU|Mux16~2|dataa"
-    Warning (332126): Node "mainALU|Mux16~2|combout"
-    Warning (332126): Node "regmux|Mux14~2|dataf"
-    Warning (332126): Node "mainALU|Add0~113|datac"
-    Warning (332126): Node "mainALU|Add0~113|sumout"
-    Warning (332126): Node "mainALU|Mux17~0|datae"
-    Warning (332126): Node "mainALU|Mux18~0|datad"
-    Warning (332126): Node "mainALU|Mux18~0|combout"
-    Warning (332126): Node "regmux|Mux16~1|datad"
-    Warning (332126): Node "mainALU|Mux18~1|datad"
-    Warning (332126): Node "mainALU|Add0~69|dataf"
-    Warning (332126): Node "mainALU|Add0~69|sumout"
-    Warning (332126): Node "mainALU|Mux18~1|datag"
-    Warning (332126): Node "mainALU|Mux19~1|datad"
-    Warning (332126): Node "mainALU|Add0~65|datac"
-    Warning (332126): Node "mainALU|Add0~65|sumout"
-    Warning (332126): Node "mainALU|Mux19~1|datag"
-    Warning (332126): Node "mainALU|Add0~61|dataf"
-    Warning (332126): Node "mainALU|Add0~61|sumout"
-    Warning (332126): Node "mainALU|Mux20~1|datag"
-    Warning (332126): Node "mainALU|Mux4~3|datae"
-    Warning (332126): Node "mainALU|Add0~5|dataf"
-    Warning (332126): Node "mainALU|Add0~5|sumout"
-    Warning (332126): Node "mainALU|Mux21~2|datag"
-    Warning (332126): Node "mainALU|Add0~37|datac"
-    Warning (332126): Node "mainALU|Add0~37|sumout"
-    Warning (332126): Node "mainALU|Mux22~2|datag"
-    Warning (332126): Node "mainALU|Mux23~0|dataf"
-    Warning (332126): Node "mainALU|Mux23~0|combout"
-    Warning (332126): Node "regmux|Mux21~1|datab"
-    Warning (332126): Node "mainALU|Add0~29|dataf"
-    Warning (332126): Node "mainALU|Add0~29|sumout"
-    Warning (332126): Node "mainALU|Mux26~2|datag"
-    Warning (332126): Node "mainALU|Add0~25|dataf"
-    Warning (332126): Node "mainALU|Add0~25|sumout"
-    Warning (332126): Node "mainALU|Mux27~2|datag"
-    Warning (332126): Node "mainALU|Mux28~2|dataf"
-    Warning (332126): Node "mainALU|Add0~21|datad"
-    Warning (332126): Node "mainALU|Add0~21|sumout"
-    Warning (332126): Node "mainALU|Mux28~2|datag"
-    Warning (332126): Node "mainALU|Mux28~0|datae"
-    Warning (332126): Node "mainALU|Mux28~0|combout"
-    Warning (332126): Node "regmux|Mux26~2|dataa"
-    Warning (332126): Node "regmux|Mux23~2|dataa"
-    Warning (332126): Node "regmux|Mux24~2|dataf"
-    Warning (332126): Node "regmux|Mux27~4|datad"
-    Warning (332126): Node "regmux|Mux27~4|combout"
-    Warning (332126): Node "mainALU|LessThan0~7|datad"
-    Warning (332126): Node "mainALU|LessThan1~7|datac"
-    Warning (332126): Node "mainALU|Equal0~5|datac"
-    Warning (332126): Node "mainALU|Mux13~2|datad"
-    Warning (332126): Node "mainALU|Add1~17|datab"
-    Warning (332126): Node "mainALU|Add1~17|sumout"
-    Warning (332126): Node "mainALU|Mux29~2|datac"
-    Warning (332126): Node "mainALU|Mux29~2|combout"
-    Warning (332126): Node "regmux|Mux27~4|dataa"
-    Warning (332126): Node "mainALU|Add1~17|shareout"
-    Warning (332126): Node "mainALU|Add1~21|sharein"
-    Warning (332126): Node "mainALU|Mux29~2|datad"
-    Warning (332126): Node "mainALU|Mux29~0|datae"
-    Warning (332126): Node "mainALU|Mux29~0|combout"
-    Warning (332126): Node "regmux|Mux27~4|datae"
-    Warning (332126): Node "mainALU|Add0~17|datac"
-    Warning (332126): Node "mainALU|Add0~17|sumout"
-    Warning (332126): Node "mainALU|Mux29~2|datag"
-    Warning (332126): Node "regmux|Mux25~2|datae"
-    Warning (332126): Node "regmux|Mux22~2|datab"
-    Warning (332126): Node "regmux|Mux27~2|dataa"
-    Warning (332126): Node "regmux|Mux27~2|combout"
-    Warning (332126): Node "regmux|Mux26~1|datae"
-    Warning (332126): Node "regmux|Mux26~1|combout"
-    Warning (332126): Node "regmux|Mux26~2|datac"
-    Warning (332126): Node "regmux|Mux23~1|datab"
-    Warning (332126): Node "regmux|Mux23~1|combout"
-    Warning (332126): Node "regmux|Mux23~2|dataf"
-    Warning (332126): Node "regmux|Mux25~1|datac"
-    Warning (332126): Node "regmux|Mux25~1|combout"
-    Warning (332126): Node "regmux|Mux25~2|datab"
-    Warning (332126): Node "regmux|Mux24~1|datac"
-    Warning (332126): Node "regmux|Mux24~1|combout"
-    Warning (332126): Node "regmux|Mux24~2|datac"
-    Warning (332126): Node "regmux|Mux27~3|datac"
-    Warning (332126): Node "regmux|Mux27~3|combout"
-    Warning (332126): Node "regmux|Mux27~4|datac"
-    Warning (332126): Node "regmux|Mux22~1|dataf"
-    Warning (332126): Node "regmux|Mux22~1|combout"
-    Warning (332126): Node "regmux|Mux22~2|datac"
-    Warning (332126): Node "mainALU|Add1~41|datac"
-    Warning (332126): Node "mainALU|Add1~41|sumout"
-    Warning (332126): Node "mainALU|Mux31~3|datad"
-    Warning (332126): Node "mainALU|Mux31~3|combout"
-    Warning (332126): Node "mainALU|Mux31~5|datab"
-    Warning (332126): Node "mainALU|Add1~41|cout"
-    Warning (332126): Node "mainALU|Add1~1|cin"
-    Warning (332126): Node "mainALU|Add1~41|shareout"
-    Warning (332126): Node "mainALU|Mux31~3|datae"
-    Warning (332126): Node "mainALU|LessThan0~5|datac"
-    Warning (332126): Node "mainALU|LessThan0~5|combout"
-    Warning (332126): Node "mainALU|LessThan0~6|datad"
-    Warning (332126): Node "mainALU|LessThan1~5|datac"
-    Warning (332126): Node "mainALU|LessThan1~5|combout"
-    Warning (332126): Node "mainALU|LessThan1~6|datab"
-    Warning (332126): Node "mainALU|Mux15~2|datad"
-    Warning (332126): Node "mainALU|Equal0~7|datac"
-    Warning (332126): Node "mainALU|Equal0~7|combout"
-    Warning (332126): Node "mainALU|LessThan0~6|dataa"
-    Warning (332126): Node "mainALU|LessThan1~6|dataa"
-    Warning (332126): Node "mainALU|Equal0~9|datad"
-    Warning (332126): Node "mainALU|Add0~41|dataa"
-    Warning (332126): Node "mainALU|Add0~41|sumout"
-    Warning (332126): Node "mainALU|Mux31~3|dataa"
-    Warning (332126): Node "regmux|Mux29~0|datab"
-    Warning (332126): Node "regmux|Mux29~0|combout"
-    Warning (332126): Node "regmux|Mux29~1|datad"
-    Warning (332126): Node "regmux|Mux31~3|datab"
-    Warning (332126): Node "regmux|Mux31~2|datab"
-    Warning (332126): Node "regmux|Mux31~2|combout"
-    Warning (332126): Node "regmux|Mux26~1|datad"
-    Warning (332126): Node "regmux|Mux23~1|datad"
-    Warning (332126): Node "regmux|Mux25~1|datab"
-    Warning (332126): Node "regmux|Mux30~1|datac"
-    Warning (332126): Node "regmux|Mux31~4|datae"
-    Warning (332126): Node "regmux|Mux24~1|datab"
-    Warning (332126): Node "regmux|Mux28~1|datab"
-    Warning (332126): Node "regmux|Mux27~3|datad"
-    Warning (332126): Node "regmux|Mux27~1|datab"
-    Warning (332126): Node "regmux|Mux22~1|datac"
-    Warning (332126): Node "regmux|Mux27~2|datab"
-    Warning (332126): Node "regmux|Mux10~1|datab"
-    Warning (332126): Node "regmux|Mux10~1|combout"
-    Warning (332126): Node "regmux|Mux21~1|datae"
-    Warning (332126): Node "regmux|Mux18~1|datab"
-    Warning (332126): Node "regmux|Mux19~1|datac"
-    Warning (332126): Node "regmux|Mux0~2|datab"
-    Warning (332126): Node "regmux|Mux0~2|combout"
-    Warning (332126): Node "regmux|Mux0~3|datac"
-    Warning (332126): Node "regmux|Mux1~1|dataa"
-    Warning (332126): Node "regmux|Mux1~1|combout"
-    Warning (332126): Node "regmux|Mux1~2|datab"
-    Warning (332126): Node "regmux|Mux3~1|datad"
-    Warning (332126): Node "regmux|Mux3~1|combout"
-    Warning (332126): Node "regmux|Mux3~2|datad"
-    Warning (332126): Node "regmux|Mux4~1|datae"
-    Warning (332126): Node "regmux|Mux4~1|combout"
-    Warning (332126): Node "regmux|Mux4~2|datad"
-    Warning (332126): Node "regmux|Mux5~1|datac"
-    Warning (332126): Node "regmux|Mux5~1|combout"
-    Warning (332126): Node "regmux|Mux5~2|datab"
-    Warning (332126): Node "regmux|Mux6~1|datac"
-    Warning (332126): Node "regmux|Mux6~1|combout"
-    Warning (332126): Node "regmux|Mux6~2|datad"
-    Warning (332126): Node "regmux|Mux11~1|datab"
-    Warning (332126): Node "regmux|Mux11~1|combout"
-    Warning (332126): Node "regmux|Mux11~2|datac"
-    Warning (332126): Node "regmux|Mux12~1|datac"
-    Warning (332126): Node "regmux|Mux12~1|combout"
-    Warning (332126): Node "regmux|Mux12~2|datad"
-    Warning (332126): Node "regmux|Mux10~2|datac"
-    Warning (332126): Node "regmux|Mux10~2|combout"
-    Warning (332126): Node "regmux|Mux10~3|datab"
-    Warning (332126): Node "regmux|Mux13~1|datab"
-    Warning (332126): Node "regmux|Mux13~1|combout"
-    Warning (332126): Node "regmux|Mux13~2|datad"
-    Warning (332126): Node "regmux|Mux15~1|datae"
-    Warning (332126): Node "regmux|Mux15~1|combout"
-    Warning (332126): Node "regmux|Mux15~2|datad"
-    Warning (332126): Node "regmux|Mux16~1|datac"
-    Warning (332126): Node "regmux|Mux7~1|dataa"
-    Warning (332126): Node "regmux|Mux7~1|combout"
-    Warning (332126): Node "regmux|Mux7~2|datad"
-    Warning (332126): Node "regmux|Mux8~1|dataa"
-    Warning (332126): Node "regmux|Mux8~1|combout"
-    Warning (332126): Node "regmux|Mux8~2|datac"
-    Warning (332126): Node "regmux|Mux17~1|datac"
-    Warning (332126): Node "regmux|Mux9~1|datac"
-    Warning (332126): Node "regmux|Mux9~1|combout"
-    Warning (332126): Node "regmux|Mux9~2|datab"
-    Warning (332126): Node "regmux|Mux14~1|datad"
-    Warning (332126): Node "regmux|Mux14~1|combout"
-    Warning (332126): Node "regmux|Mux14~2|datad"
-    Warning (332126): Node "regmux|Mux0~1|datac"
-    Warning (332126): Node "regmux|Mux0~1|combout"
-    Warning (332126): Node "regmux|Mux1~2|datac"
-    Warning (332126): Node "regmux|Mux0~3|dataf"
-    Warning (332126): Node "regmux|Mux4~2|datae"
-    Warning (332126): Node "regmux|Mux5~2|dataa"
-    Warning (332126): Node "regmux|Mux6~2|datab"
-    Warning (332126): Node "regmux|Mux11~2|dataa"
-    Warning (332126): Node "regmux|Mux12~2|dataa"
-    Warning (332126): Node "regmux|Mux10~3|dataa"
-    Warning (332126): Node "regmux|Mux13~2|dataa"
-    Warning (332126): Node "regmux|Mux14~2|datab"
-    Warning (332126): Node "regmux|Mux15~2|datab"
-    Warning (332126): Node "regmux|Mux7~2|datac"
-    Warning (332126): Node "regmux|Mux8~2|datab"
-    Warning (332126): Node "regmux|Mux9~2|datac"
-    Warning (332126): Node "regmux|Mux3~2|dataf"
-    Warning (332126): Node "regmux|Mux20~1|datac"
-    Warning (332126): Node "mainALU|Add0~1|sumout"
-    Warning (332126): Node "mainALU|Mux30~4|datac"
-    Warning (332126): Node "mainALU|Mux32~1|datac"
-    Warning (332126): Node "mainALU|Mux32~1|combout"
-    Warning (332126): Node "mainALU|Mux32~2|datab"
-    Warning (332126): Node "mainALU|Mux32~0|datad"
-    Warning (332126): Node "mainALU|LessThan0~4|datac"
-    Warning (332126): Node "mainALU|LessThan0~4|combout"
-    Warning (332126): Node "mainALU|LessThan0~6|datae"
-    Warning (332126): Node "mainALU|LessThan1~4|datad"
-    Warning (332126): Node "mainALU|LessThan1~4|combout"
-    Warning (332126): Node "mainALU|LessThan1~6|dataf"
-    Warning (332126): Node "mainALU|Equal0~9|dataa"
-    Warning (332126): Node "mainALU|Mux16~2|datad"
-    Warning (332126): Node "mainALU|Add1~53|dataa"
-    Warning (332126): Node "mainALU|Add1~53|cout"
-    Warning (332126): Node "mainALU|Add1~41|cin"
-    Warning (332126): Node "mainALU|Add1~53|shareout"
-    Warning (332126): Node "mainALU|Add1~41|sharein"
-    Warning (332126): Node "mainALU|Mux33~10|datac"
-    Warning (332126): Node "mainALU|Mux33~9|datab"
-    Warning (332126): Node "mainALU|Mux33~9|combout"
-    Warning (332126): Node "mainALU|Mux33~12|datac"
-    Warning (332126): Node "mainALU|Add0~49|datad"
-    Warning (332126): Node "mainALU|Add0~49|sumout"
-    Warning (332126): Node "mainALU|Mux33~10|datad"
-    Warning (332126): Node "mainALU|Mux33~9|datac"
-    Warning (332126): Node "mainALU|Add0~49|cout"
-    Warning (332126): Node "mainALU|Add0~53|cin"
-    Warning (332126): Node "mainALU|LessThan0~4|dataa"
-    Warning (332126): Node "mainALU|LessThan1~4|dataa"
-    Warning (332126): Node "mainALU|Mux17~2|datac"
-    Warning (332126): Node "mainALU|Equal0~9|datae"
-    Warning (332126): Node "mainALU|Mux33~3|datae"
-    Warning (332126): Node "mainALU|LessThan1~3|datad"
-    Warning (332126): Node "mainALU|LessThan1~3|combout"
-    Warning (332126): Node "mainALU|Mux33~11|datab"
-    Warning (332126): Node "mainALU|Mux33~6|datab"
-    Warning (332126): Node "mainALU|calc~3|datad"
-    Warning (332126): Node "mainALU|calc~3|combout"
-    Warning (332126): Node "mainALU|LessThan1~26|datad"
-    Warning (332126): Node "mainALU|Equal0~8|datab"
-    Warning (332126): Node "mainALU|Mux2~1|datad"
-    Warning (332126): Node "mainALU|Mux2~1|combout"
-    Warning (332126): Node "mainALU|Mux2~2|datad"
-    Warning (332126): Node "mainALU|Add1~125|dataa"
-    Warning (332126): Node "mainALU|Add0~125|dataa"
-    Warning (332126): Node "mainALU|Mux2~0|dataf"
-    Warning (332126): Node "mainALU|Add1~1|shareout"
-    Warning (332126): Node "mainALU|Add1~17|sharein"
-    Warning (332126): Node "mainALU|LessThan0~5|dataa"
-    Warning (332126): Node "mainALU|LessThan1~5|dataa"
-    Warning (332126): Node "mainALU|Mux14~2|datad"
-    Warning (332126): Node "mainALU|Equal0~7|dataa"
-    Warning (332126): Node "mainALU|Mux30~0|dataf"
-    Warning (332126): Node "mainALU|Mux30~0|combout"
-    Warning (332126): Node "mainALU|Mux30~4|datae"
-    Warning (332126): Node "mainALU|Mux30~3|dataa"
-    Warning (332126): Node "mainALU|Mux30~3|combout"
-    Warning (332126): Node "mainALU|Mux30~5|datae"
-    Warning (332126): Node "mainALU|Mux30~5|combout"
-    Warning (332126): Node "regmux|Mux28~2|datac"
-    Warning (332126): Node "mainALU|Add0~1|dataf"
-Critical Warning (332081): Design contains combinational loop of 1087 nodes. Estimating the delays through the loop.
 Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: control|Mux1~2  from: datab  to: combout
-    Info (332098): Cell: control|Mux1~2  from: datac  to: combout
+    Info (332098): Cell: control|Mux1~0  from: dataf  to: combout
     Info (332098): Cell: control|Mux2~0  from: dataa  to: combout
-    Info (332098): Cell: control|Mux2~0  from: dataf  to: combout
-    Info (332098): Cell: control|Mux2~3  from: dataa  to: combout
-    Info (332098): Cell: control|Mux2~3  from: datad  to: combout
+    Info (332098): Cell: control|Mux2~0  from: datac  to: combout
+    Info (332098): Cell: control|Mux2~3  from: datac  to: combout
+    Info (332098): Cell: control|Mux2~3  from: datae  to: combout
     Info (332098): Cell: control|Mux3~0  from: dataa  to: combout
     Info (332098): Cell: control|Mux3~0  from: datab  to: combout
     Info (332098): Cell: control|Mux3~0  from: datac  to: combout
@@ -1718,9 +281,9 @@ Info (332097): The following timing edges are non-unate.  TimeQuest will assume 
     Info (332098): Cell: control|Mux4~0  from: dataa  to: combout
     Info (332098): Cell: control|Mux4~0  from: datab  to: combout
     Info (332098): Cell: control|Mux4~0  from: datac  to: combout
-    Info (332098): Cell: control|Mux4~0  from: datad  to: combout
+    Info (332098): Cell: control|Mux4~0  from: datae  to: combout
     Info (332098): Cell: control|Mux4~0  from: dataf  to: combout
-    Info (332098): Cell: control|WideOr0~0  from: datad  to: combout
+    Info (332098): Cell: control|WideOr0~0  from: datab  to: combout
     Info (332098): Cell: control|WideOr3~0  from: datab  to: combout
     Info (332098): Cell: control|WideOr3~0  from: datac  to: combout
     Info (332098): Cell: control|WideOr3~0  from: datad  to: combout
@@ -1733,89 +296,87 @@ Info (332097): The following timing edges are non-unate.  TimeQuest will assume 
     Info (332098): Cell: control|WideOr7~0  from: datac  to: combout
     Info (332098): Cell: control|WideOr7~0  from: datad  to: combout
     Info (332098): Cell: control|WideOr7~0  from: dataf  to: combout
+    Info (332098): Cell: control|WideOr8~0  from: dataa  to: combout
     Info (332098): Cell: control|WideOr8~0  from: datac  to: combout
     Info (332098): Cell: control|WideOr8~0  from: datad  to: combout
-    Info (332098): Cell: control|WideOr8~0  from: datae  to: combout
     Info (332098): Cell: control|WideOr8~0  from: dataf  to: combout
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Critical Warning (308037): (Critical) Rule A101: Design should not contain combinational loops. Found 1 combinational loop(s) related to this rule.
-    Critical Warning (308012): Node  "ALU:mainALU|Add1~2"
 Critical Warning (308055): (High) Rule A108: Design should not contain latches. Found 1 latch(es) related to this rule.
     Critical Warning (308012): Node  "ALU:mainALU|compcalc"
 Warning (308040): (Medium) Rule C104: Clock signal source should drive only clock input ports. Found 1 nodes related to this rule.
     Warning (308010): Node  "ClockDivider:clk_divider|clk"
 Warning (308022): (Medium) Rule C106: Clock signal source should not drive registers triggered by different clock edges. Found 1 node(s) related to this rule.
     Warning (308010): Node  "ClockDivider:clk_divider|clk"
-Info (308046): (Information) Rule T101: Nodes with more than the specified number of fan-outs. (Value defined:30). Found 37 node(s) with highest fan-out.
-    Info (308011): Node  "Controller:control|Selector3~2"
-    Info (308011): Node  "Register:pc|dataOut[3]"
+Info (308046): (Information) Rule T101: Nodes with more than the specified number of fan-outs. (Value defined:30). Found 47 node(s) with highest fan-out.
     Info (308011): Node  "ClockDivider:clk_divider|clk~CLKENA0"
-    Info (308011): Node  "Register:pc|dataOut[2]"
-    Info (308011): Node  "Register:pc|dataOut[6]"
-    Info (308011): Node  "Controller:control|Decoder1~1"
-    Info (308011): Node  "Register:pc|dataOut[9]"
+    Info (308011): Node  "ClockDivider:clk_divider|Equal0~6"
+    Info (308011): Node  "CLOCK_50~inputCLKENA0"
+    Info (308011): Node  "RegFile:registerFile|data~879"
+    Info (308011): Node  "Register:pc|dataOut[7]"
     Info (308011): Node  "Controller:control|Mux4~0"
     Info (308011): Node  "Register:pc|dataOut[8]"
-    Info (308011): Node  "RegFile:registerFile|data~686"
-    Info (308011): Node  "Register:pc|dataOut[4]"
+    Info (308011): Node  "InstMemory:instMem|data~0"
     Info (308011): Node  "Register:pc|dataOut[12]"
-    Info (308011): Node  "Controller:control|Mux3~0"
-    Info (308011): Node  "Register:pc|dataOut[7]"
+    Info (308011): Node  "Controller:control|Decoder1~1"
+    Info (308011): Node  "Register:pc|dataOut[6]"
+    Info (308011): Node  "Register:pc|dataOut[3]"
+    Info (308011): Node  "ALU:mainALU|Mux26~0"
+    Info (308011): Node  "Register:pc|dataOut[2]"
+    Info (308011): Node  "RegFile:registerFile|data~878"
     Info (308011): Node  "Register:pc|dataOut[5]"
-    Info (308011): Node  "Controller:control|Selector1~0"
-    Info (308011): Node  "Controller:control|Selector0~0"
-    Info (308011): Node  "RegFile:registerFile|data~685"
-    Info (308011): Node  "RegFile:registerFile|data~677"
-    Info (308011): Node  "RegFile:registerFile|data~681"
-    Info (308011): Node  "RegFile:registerFile|data~689"
-    Info (308011): Node  "Controller:control|Selector2~0"
-    Info (308011): Node  "RegFile:registerFile|data~688"
-    Info (308011): Node  "RegFile:registerFile|data~676"
-    Info (308011): Node  "RegFile:registerFile|data~680"
-    Info (308011): Node  "RegFile:registerFile|data~684"
-    Info (308011): Node  "RegFile:registerFile|data~687"
-    Info (308011): Node  "RegFile:registerFile|data~679"
-    Info (308011): Node  "RegFile:registerFile|data~683"
-    Info (308011): Node  "RegFile:registerFile|data~675"
+    Info (308011): Node  "Controller:control|Mux3~0"
+    Info (308011): Node  "Register:pc|dataOut[4]"
+    Info (308011): Node  "RegFile:registerFile|data~871"
+    Info (308011): Node  "Register:pc|dataOut[9]"
+    Info (308011): Node  "RegFile:registerFile|data~866"
+    Info (308011): Node  "Controller:control|WideOr12~0"
+    Info (308011): Node  "Controller:control|Mux8~2"
+    Info (308011): Node  "RegFile:registerFile|data~864"
+    Info (308011): Node  "ALU:mainALU|Mux4~1"
+    Info (308011): Node  "RegFile:registerFile|data~877"
+    Info (308011): Node  "Controller:control|WideOr12~1"
+    Info (308011): Node  "RegFile:registerFile|data~876"
+    Info (308011): Node  "Controller:control|Selector0~1"
+    Info (308011): Node  "Controller:control|Selector1~1"
     Info (308002): Truncated list of Design Assistant messages to 30 messages. Go to sections under Design Assistant section of Compilation Report for complete lists of Design Assistant messages generated.
 Info (308044): (Information) Rule T102: Top nodes with the highest number of fan-outs. (Value defined:50). Found 50 node(s) with highest fan-out.
     Info (308011): Node  "ClockDivider:clk_divider|clk~CLKENA0"
+    Info (308011): Node  "Multiplexer:alumux|Mux25~0"
     Info (308011): Node  "Register:pc|dataOut[5]"
-    Info (308011): Node  "Register:pc|dataOut[4]"
+    Info (308011): Node  "Controller:control|WideOr12~0"
     Info (308011): Node  "Register:pc|dataOut[3]"
+    Info (308011): Node  "Register:pc|dataOut[4]"
+    Info (308011): Node  "Controller:control|Decoder1~1"
     Info (308011): Node  "Register:pc|dataOut[2]"
-    Info (308011): Node  "Controller:control|Selector6~0"
-    Info (308011): Node  "Controller:control|Selector5~0"
-    Info (308011): Node  "Controller:control|Selector1~0"
     Info (308011): Node  "Controller:control|Selector3~2"
-    Info (308011): Node  "Controller:control|Selector2~0"
-    Info (308011): Node  "Controller:control|Selector0~0"
-    Info (308011): Node  "Controller:control|Selector7~1"
-    Info (308011): Node  "Controller:control|Selector4~0"
+    Info (308011): Node  "Controller:control|Selector2~3"
+    Info (308011): Node  "Controller:control|Mux8~2"
+    Info (308011): Node  "Controller:control|Mux5~0"
+    Info (308011): Node  "Controller:control|Mux6~0"
+    Info (308011): Node  "Controller:control|Selector0~1"
+    Info (308011): Node  "Controller:control|Mux7~0"
+    Info (308011): Node  "Controller:control|Selector1~1"
     Info (308011): Node  "Register:pc|dataOut[6]"
     Info (308011): Node  "Register:pc|dataOut[7]"
     Info (308011): Node  "Register:pc|dataOut[8]"
-    Info (308011): Node  "Controller:control|Mux4~0"
     Info (308011): Node  "Controller:control|Mux3~0"
-    Info (308011): Node  "Register:pc|dataOut[9]"
+    Info (308011): Node  "Controller:control|Mux4~0"
     Info (308011): Node  "Register:pc|dataOut[12]"
-    Info (308011): Node  "Controller:control|Decoder1~1"
-    Info (308011): Node  "RegFile:registerFile|data~681"
-    Info (308011): Node  "RegFile:registerFile|data~683"
-    Info (308011): Node  "RegFile:registerFile|data~679"
-    Info (308011): Node  "RegFile:registerFile|data~685"
-    Info (308011): Node  "RegFile:registerFile|data~682"
-    Info (308011): Node  "RegFile:registerFile|data~678"
-    Info (308011): Node  "RegFile:registerFile|data~675"
-    Info (308011): Node  "RegFile:registerFile|data~676"
-    Info (308011): Node  "RegFile:registerFile|data~686"
+    Info (308011): Node  "Register:pc|dataOut[9]"
+    Info (308011): Node  "InstMemory:instMem|data~0"
+    Info (308011): Node  "InstMemory:instMem|data~67"
+    Info (308011): Node  "ALU:mainALU|Mux4~1"
+    Info (308011): Node  "ClockDivider:clk_divider|Equal0~6"
+    Info (308011): Node  "RegFile:registerFile|data~871"
+    Info (308011): Node  "RegFile:registerFile|data~868"
+    Info (308011): Node  "CLOCK_50~inputCLKENA0"
     Info (308002): Truncated list of Design Assistant messages to 30 messages. Go to sections under Design Assistant section of Compilation Report for complete lists of Design Assistant messages generated.
-Info (308007): Design Assistant information: finished post-fitting analysis of current design -- generated 87 information messages and 4 warning messages
-Info: Quartus II 64-Bit Design Assistant was successful. 0 errors, 1099 warnings
-    Info: Peak virtual memory: 567 megabytes
-    Info: Processing ended: Tue Nov 01 23:56:53 2016
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info (308007): Design Assistant information: finished post-fitting analysis of current design -- generated 97 information messages and 3 warning messages
+Info: Quartus II 64-Bit Design Assistant was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 516 megabytes
+    Info: Processing ended: Wed Nov 02 22:16:19 2016
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 
