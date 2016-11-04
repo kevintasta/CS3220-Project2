@@ -1,0 +1,12 @@
+`module 1ns / 1ps
+module Test_LeftShift ();
+	wire[31:0] out;
+	reg[31:0] in;
+	
+	LeftShift ls1(in, out);
+	
+	initial begin
+		
+		in = 
+	end
+endmodule

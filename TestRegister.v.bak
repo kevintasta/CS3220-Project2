@@ -1,0 +1,84 @@
+`module 1ns / 1ps
+module TestRegister ();
+	wire[31:0] data_out;
+	reg clk;
+	reg reset;
+	reg wrt_en;
+	reg[31:0] data_in;
+	
+	Register reg1(clk, reset, wrt_en, data_in, data_out);
+	
+	initial begin
+		data_in = 8'b11111111;
+		wrt_en = 1'b0;
+		reset = 1'b0;
+		
+		#10
+		data_in = 8'b10011010;
+		wrt_en = 1'b0;
+		
+		#10
+		data_in = 8'b11111111;
+		wrt_en = 1'b1;
+		
+		#10
+		data_in = 8'b10011010;
+		wrt_en = 1'b0;
+		
+		#10
+		data_in = 8'b10011010;
+		wrt_en = 1'b1;
+		
+		#10
+		reset = 1'b0;
+		
+		#10
+		$stop;
+	end
+	
+	always begin
+		#5 clk = ~clk;
+	end
+endmodule
+
+
+
+`timescale 1ns / 1ps
+module Test_register ();
+	wire[7:0] reg_out;
+	reg[7:0] reg_in;
+	reg reg_en;
+	reg clk = 1'b0;
+	
+	register r1(reg_in, reg_en, clk, reg_out);
+	initial begin
+		reg_in = 8'b11111111;
+		reg_en = 1'b0;
+		
+		#10
+		reg_in = 8'b10011010;
+		reg_en = 1'b0;
+		
+		#10
+		reg_in = 8'b11111111;
+		reg_en = 1'b1;
+		
+		#10
+		reg_in = 8'b10011010;
+		reg_en = 1'b0;
+		
+		#10
+		reg_in = 8'b10011010;
+		reg_en = 1'b1;
+		
+		#10
+		$stop;
+	end
+	
+	always begin
+		#5 clk = ~clk;
+	end
+	
+
+
+endmodule
