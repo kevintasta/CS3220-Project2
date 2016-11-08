@@ -472,6 +472,25 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_100MHZ
 set_global_assignment -name ENABLE_DRC_SETTINGS ON
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "100 ns" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH TestProject2 -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME TestProject2 -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TestProject2
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TestProject2 -section_id TestProject2
+set_global_assignment -name EDA_TEST_BENCH_FILE TestProject2.v -section_id TestProject2
+set_global_assignment -name VERILOG_FILE TestSignExtension.v
+set_global_assignment -name VERILOG_FILE TestRegister.v
+set_global_assignment -name VERILOG_FILE TestMultiplexer.v
+set_global_assignment -name VERILOG_FILE TestLeftShift.v
+set_global_assignment -name VERILOG_FILE TestBranchPicker.v
+set_global_assignment -name VERILOG_FILE hex2_7seg.v
+set_global_assignment -name VERILOG_FILE TestAdder.v
 set_global_assignment -name VERILOG_FILE SignExtension.v
 set_global_assignment -name VERILOG_FILE SevenSeg.v
 set_global_assignment -name VERILOG_FILE Register.v
@@ -489,19 +508,7 @@ set_global_assignment -name VERILOG_FILE LeftShift.v
 set_global_assignment -name VERILOG_FILE RegFile.v
 set_global_assignment -name VERILOG_FILE BranchPicker.v
 set_global_assignment -name VERILOG_FILE dec2_7seg.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VERILOG_FILE TestProject2.v
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_TIME_SCALE "100 ns" -section_id eda_simulation
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH TestProject2 -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME TestProject2 -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TestProject2
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TestProject2 -section_id TestProject2
-set_global_assignment -name EDA_TEST_BENCH_FILE TestProject2.v -section_id TestProject2
 set_global_assignment -name HEX_FILE Test2.hex
 set_global_assignment -name VERILOG_FILE TestRegFile.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

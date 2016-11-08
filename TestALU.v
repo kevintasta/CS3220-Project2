@@ -11,7 +11,8 @@ module TestALU();
 	initial begin
 		A = -32'd8;
 		B = 32'd8;
-		opCode = LTE;
+
+		opCode = ADD;
 		#10;
 		opCode = SUB;
 		#10;
@@ -29,34 +30,273 @@ module TestALU();
 		#10;
 		opCode = MVHI;
 		#10;
+		
+		// F ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = F;
+		
 		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = F;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = F;
+		
+		// EQ ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = EQ;
+		
 		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = EQ;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = EQ;
+		
+		// LT ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = LT;
+		
 		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = LT;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = LT;
+		
+		// LTE ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = LTE;
+		
 		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = LTE;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = LTE;
+		
+		// T ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = T;
+		
 		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = T;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = T;
+		
+		// NE ---------------
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
 		opCode = NE;
+		
 		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = NE;
+		
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
+		opCode = NE;
+		
+		// GTE ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = GTE;
+		
 		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = GTE;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = GTE;
+		
+		// GT ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = GT;
+		
 		#10;
-		A = -32'd13;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = GT;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = GT;
+		
+		// BEQZ ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = BEQZ;
+		
 		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = BEQZ;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = BEQZ;
+		
+		// BLTZ ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = BLTZ;
+		
 		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = BLTZ;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = BLTZ;
+		
+		// BLTEZ ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = BLTEZ;
+		
 		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = BLTEZ;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = BLTEZ;
+		
+		// BNEZ ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = BNEZ;
+		
 		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = BNEZ;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = BNEZ;
+		
+		// BGTEZ ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = BGTEZ;
+		
 		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = BGTEZ;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = BGTEZ;
+		
+		// BGTZ ---------------
+		#10;
+		// A > B
+		A = 32'd8;
+		B = -32'd8;
 		opCode = BGTZ;
+		
+		#10;
+		// A == B
+		A = 32'd8;
+		B = 32'd8;
+		opCode = BGTZ;
+		
+		#10;
+		// A < B
+		A = -32'd8;
+		B = 32'd8;
+		opCode = BGTZ;
+		
 		#10;
 		$stop;
 	end

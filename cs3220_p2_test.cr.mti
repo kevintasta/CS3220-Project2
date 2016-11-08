@@ -1,0 +1,351 @@
+C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestRegister.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestRegister.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestRegister
+
+Top level modules:
+	TestRegister
+
+} {} {}} D:/Desktop/CS3220-Project2/Register.v {1 {vlog -work work D:/Desktop/CS3220-Project2/Register.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}} D:/Desktop/CS3220-Project2/SignExtension.v {1 {vlog -work work D:/Desktop/CS3220-Project2/SignExtension.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SignExtension
+
+Top level modules:
+	SignExtension
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestAdder.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestAdder.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestAdder
+
+Top level modules:
+	TestAdder
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/SevenSeg.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/SevenSeg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SevenSeg
+
+Top level modules:
+	SevenSeg
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/Controller.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/Controller.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} D:/Desktop/CS3220-Project2/TestController.v {1 {vlog -work work D:/Desktop/CS3220-Project2/TestController.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestController
+
+Top level modules:
+	TestController
+
+} {} {}} D:/Desktop/CS3220-Project2/BranchPicker.v {1 {vlog -work work D:/Desktop/CS3220-Project2/BranchPicker.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module BranchPicker
+
+Top level modules:
+	BranchPicker
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/SignExtension.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/SignExtension.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SignExtension
+
+Top level modules:
+	SignExtension
+
+} {} {}} D:/Desktop/CS3220-Project2/TestRegFile.v {1 {vlog -work work D:/Desktop/CS3220-Project2/TestRegFile.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestRegFile
+
+Top level modules:
+	TestRegFile
+
+} {} {}} D:/Desktop/CS3220-Project2/TestAdder.v {1 {vlog -work work D:/Desktop/CS3220-Project2/TestAdder.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestAdder
+
+Top level modules:
+	TestAdder
+
+} {} {}} D:/Desktop/CS3220-Project2/SevenSeg.v {1 {vlog -work work D:/Desktop/CS3220-Project2/SevenSeg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SevenSeg
+
+Top level modules:
+	SevenSeg
+
+} {} {}} D:/Desktop/CS3220-Project2/ALU.v {1 {vlog -work work D:/Desktop/CS3220-Project2/ALU.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestController.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestController.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestController
+
+Top level modules:
+	TestController
+
+} {} {}} D:/Desktop/CS3220-Project2/ClockDivider.v {1 {vlog -work work D:/Desktop/CS3220-Project2/ClockDivider.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ClockDivider
+
+Top level modules:
+	ClockDivider
+
+} {} {}} D:/Desktop/CS3220-Project2/DataMemory.v {1 {vlog -work work D:/Desktop/CS3220-Project2/DataMemory.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} D:/Desktop/CS3220-Project2/Multiplexer.v {1 {vlog -work work D:/Desktop/CS3220-Project2/Multiplexer.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Multiplexer
+
+Top level modules:
+	Multiplexer
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestSignExtension.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestSignExtension.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestSignExtension
+
+Top level modules:
+	TestSignExtension
+
+} {} {}} D:/Desktop/CS3220-Project2/TestLeftShift.v {1 {vlog -work work D:/Desktop/CS3220-Project2/TestLeftShift.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestLeftShift
+
+Top level modules:
+	TestLeftShift
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/InstMemory.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/InstMemory.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module InstMemory
+
+Top level modules:
+	InstMemory
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/LeftShift.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/LeftShift.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module LeftShift
+
+Top level modules:
+	LeftShift
+
+} {} {}} D:/Desktop/CS3220-Project2/TestProject2.v {1 {vlog -work work D:/Desktop/CS3220-Project2/TestProject2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestProject2
+
+Top level modules:
+	TestProject2
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/hex2_7seg.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/hex2_7seg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module hex2_7seg
+
+Top level modules:
+	hex2_7seg
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/BranchPicker.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/BranchPicker.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module BranchPicker
+
+Top level modules:
+	BranchPicker
+
+} {} {}} D:/Desktop/CS3220-Project2/Controller.v {1 {vlog -work work D:/Desktop/CS3220-Project2/Controller.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} D:/Desktop/CS3220-Project2/TestRegister.v {1 {vlog -work work D:/Desktop/CS3220-Project2/TestRegister.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestRegister
+
+Top level modules:
+	TestRegister
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/RegFile.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/RegFile.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RegFile
+
+Top level modules:
+	RegFile
+
+} {} {}} D:/Desktop/CS3220-Project2/TestSignExtension.v {1 {vlog -work work D:/Desktop/CS3220-Project2/TestSignExtension.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestSignExtension
+
+Top level modules:
+	TestSignExtension
+
+} {} {}} D:/Desktop/CS3220-Project2/RegFile.v {1 {vlog -work work D:/Desktop/CS3220-Project2/RegFile.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RegFile
+
+Top level modules:
+	RegFile
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestLeftShift.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestLeftShift.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestLeftShift
+
+Top level modules:
+	TestLeftShift
+
+} {} {}} D:/Desktop/CS3220-Project2/Adder.v {1 {vlog -work work D:/Desktop/CS3220-Project2/Adder.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/ClockDivider.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/ClockDivider.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ClockDivider
+
+Top level modules:
+	ClockDivider
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestBranchPicker.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestBranchPicker.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestBranchPicker
+
+Top level modules:
+	TestBranchPicker
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestRegFile.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestRegFile.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestRegFile
+
+Top level modules:
+	TestRegFile
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/Project2.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/Project2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Project2
+
+Top level modules:
+	Project2
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/ALU.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/ALU.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/Desktop/CS3220-Project2/LeftShift.v {1 {vlog -work work D:/Desktop/CS3220-Project2/LeftShift.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module LeftShift
+
+Top level modules:
+	LeftShift
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/Multiplexer.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/Multiplexer.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Multiplexer
+
+Top level modules:
+	Multiplexer
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/Register.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/Register.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}} D:/Desktop/CS3220-Project2/hex2_7seg.v {1 {vlog -work work D:/Desktop/CS3220-Project2/hex2_7seg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module hex2_7seg
+
+Top level modules:
+	hex2_7seg
+
+} {} {}} D:/Desktop/CS3220-Project2/TestBranchPicker.v {1 {vlog -work work D:/Desktop/CS3220-Project2/TestBranchPicker.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestBranchPicker
+
+Top level modules:
+	TestBranchPicker
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/Adder.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/Adder.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} D:/Desktop/CS3220-Project2/InstMemory.v {1 {vlog -work work D:/Desktop/CS3220-Project2/InstMemory.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module InstMemory
+
+Top level modules:
+	InstMemory
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestProject2.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestProject2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestProject2
+
+Top level modules:
+	TestProject2
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestALU.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestALU.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestALU
+
+Top level modules:
+	TestALU
+
+} {} {}} D:/Desktop/CS3220-Project2/Project2.v {1 {vlog -work work D:/Desktop/CS3220-Project2/Project2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Project2
+
+Top level modules:
+	Project2
+
+} {} {}} D:/Desktop/CS3220-Project2/TestALU.v {1 {vlog -work work D:/Desktop/CS3220-Project2/TestALU.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestALU
+
+Top level modules:
+	TestALU
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/DataMemory.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/DataMemory.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestMultiplexer.v {1 {vlog -work work C:/Users/pjztam/Documents/GitHub/CS3220-Project2/TestMultiplexer.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestMultiplexer
+
+Top level modules:
+	TestMultiplexer
+
+} {} {}} D:/Desktop/CS3220-Project2/TestMultiplexer.v {1 {vlog -work work D:/Desktop/CS3220-Project2/TestMultiplexer.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestMultiplexer
+
+Top level modules:
+	TestMultiplexer
+
+} {} {}}

@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 module TestRegister ();
 	wire[31:0] data_out;
-	reg clk;
+	reg clk = 1'b0;
 	reg reset;
 	reg wrt_en;
 	reg[31:0] data_in;
@@ -9,30 +9,30 @@ module TestRegister ();
 	Register reg1(clk, reset, wrt_en, data_in, data_out);
 	
 	initial begin
-		data_in = 8'b11111111;
+		data_in = 32'hffffffff;
 		wrt_en = 1'b0;
 		reset = 1'b0;
 		
 		#10
-		data_in = 8'b10011010;
+		data_in = 32'h9a9a9a9a;
 		wrt_en = 1'b0;
 		
 		#10
-		data_in = 8'b11111111;
+		data_in = 32'hffffffff;
 		wrt_en = 1'b1;
 		
 		#10
-		data_in = 8'b10011010;
+		data_in = 32'h9a9a9a9a;
 		wrt_en = 1'b0;
 		
 		#10
-		data_in = 8'b10011010;
+		data_in = 32'h9a9a9a9a;
 		wrt_en = 1'b1;
 		
 		#10
 		reset = 1'b1;
 		
-		#10
+		#20
 		$stop;
 	end
 	

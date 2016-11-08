@@ -1,0 +1,504 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vAdder
+Z1 I[XX4k3Rl5:8>F0V_T`aP_2
+Z2 VaMe613`o`B`9fdoGQnJ9a1
+Z3 dD:\Desktop\CS3220-Project2
+Z4 w1478543760
+Z5 8D:/Desktop/CS3220-Project2/Adder.v
+Z6 FD:/Desktop/CS3220-Project2/Adder.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@adder
+Z10 !s100 ZhYQAGd^ZbQ9cSUI>Cbk]2
+Z11 !s108 1478568630.259000
+Z12 !s107 D:/Desktop/CS3220-Project2/Adder.v|
+Z13 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/Adder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vALU
+Z14 I]^1AIMzjl_f>_SKVl5EO50
+Z15 V57Lzo6@n]R4KKK0I>iaLD3
+R3
+R4
+Z16 8D:/Desktop/CS3220-Project2/ALU.v
+Z17 FD:/Desktop/CS3220-Project2/ALU.v
+L0 1
+R7
+r1
+31
+R8
+Z18 n@a@l@u
+Z19 !s100 =W[F4EJBX^;b_3KAMcNdT1
+Z20 !s108 1478568630.332000
+Z21 !s107 D:/Desktop/CS3220-Project2/ALU.v|
+Z22 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/ALU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vBranchPicker
+Z23 IWdKjGH0Tcb:?3^PJ8ehh21
+Z24 VG5JdHn:nTO637_>MMmVf[2
+R3
+R4
+Z25 8D:/Desktop/CS3220-Project2/BranchPicker.v
+Z26 FD:/Desktop/CS3220-Project2/BranchPicker.v
+L0 1
+R7
+r1
+31
+R8
+Z27 n@branch@picker
+Z28 !s100 `D3Lafn=0@96B06@_NPGc2
+Z29 !s108 1478568630.399000
+Z30 !s107 D:/Desktop/CS3220-Project2/BranchPicker.v|
+Z31 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/BranchPicker.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vClockDivider
+Z32 I7E=zIo1AC0I=MVYeDVSl[2
+Z33 VaKdc5j@1:M>gC`:8]0G=Z3
+R3
+R4
+Z34 8D:/Desktop/CS3220-Project2/ClockDivider.v
+Z35 FD:/Desktop/CS3220-Project2/ClockDivider.v
+L0 1
+R7
+r1
+31
+R8
+Z36 n@clock@divider
+Z37 !s100 7niYe@9b0LAPd6U:O0C`22
+Z38 !s108 1478568630.453000
+Z39 !s107 D:/Desktop/CS3220-Project2/ClockDivider.v|
+Z40 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/ClockDivider.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vController
+Z41 IZQ89ZdcoHdYZT>?UM<O4U2
+Z42 V3CL_b]@hljLNHb;jF>VWC1
+R3
+R4
+Z43 8D:/Desktop/CS3220-Project2/Controller.v
+Z44 FD:/Desktop/CS3220-Project2/Controller.v
+L0 1
+R7
+r1
+31
+R8
+Z45 n@controller
+Z46 !s100 L5M?MlnH:h5ICdSUg8J_K1
+Z47 !s108 1478568630.510000
+Z48 !s107 D:/Desktop/CS3220-Project2/Controller.v|
+Z49 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/Controller.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDataMemory
+Z50 IAV9VdPTkmR=Fj3<IOH9Dg0
+Z51 VSD_k8Io5_474EX`ck]B[`1
+R3
+R4
+Z52 8D:/Desktop/CS3220-Project2/DataMemory.v
+Z53 FD:/Desktop/CS3220-Project2/DataMemory.v
+L0 1
+R7
+r1
+31
+R8
+Z54 n@data@memory
+Z55 !s100 jg@P8U@2^Kf;9>a`WL5bC3
+Z56 !s108 1478568630.564000
+Z57 !s107 D:/Desktop/CS3220-Project2/DataMemory.v|
+Z58 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/DataMemory.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vhex2_7seg
+Z59 I^EDHnThPd5X8@cKP<U?eJ3
+Z60 VMeM0MPo:4zPLc2`PjCncQ2
+R3
+Z61 w1478543764
+Z62 8D:/Desktop/CS3220-Project2/hex2_7seg.v
+Z63 FD:/Desktop/CS3220-Project2/hex2_7seg.v
+L0 1
+R7
+r1
+31
+R8
+Z64 !s100 @OE[RF524nWP1L6>nfRkR0
+Z65 !s108 1478568630.618000
+Z66 !s107 D:/Desktop/CS3220-Project2/hex2_7seg.v|
+Z67 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/hex2_7seg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vInstMemory
+Z68 IV33EeCbz7A[4PdW[KWYTJ1
+Z69 VUJYb>IZO9F_mPNHYd`^832
+R3
+R4
+Z70 8D:/Desktop/CS3220-Project2/InstMemory.v
+Z71 FD:/Desktop/CS3220-Project2/InstMemory.v
+L0 1
+R7
+r1
+31
+R8
+Z72 n@inst@memory
+Z73 !s100 jDS:49J:`>jE>_b<S;D>P3
+Z74 !s108 1478568630.675000
+Z75 !s107 D:/Desktop/CS3220-Project2/InstMemory.v|
+Z76 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/InstMemory.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vLeftShift
+Z77 IZ1Xoj10>0JzMKZzc<?OQ>1
+Z78 Vb4TS_fNfezgbHFUUj2B2n2
+R3
+R4
+Z79 8D:/Desktop/CS3220-Project2/LeftShift.v
+Z80 FD:/Desktop/CS3220-Project2/LeftShift.v
+L0 1
+R7
+r1
+31
+R8
+Z81 n@left@shift
+Z82 !s100 0Pd<j`RPFcKcVbKSSG;k[2
+Z83 !s108 1478568630.731000
+Z84 !s107 D:/Desktop/CS3220-Project2/LeftShift.v|
+Z85 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/LeftShift.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMultiplexer
+Z86 I9S@WYVP5EU8_A7?dh5N5_3
+Z87 VUEPLQPHMX_o;TiIUi_DXj1
+R3
+Z88 w1478543761
+Z89 8D:/Desktop/CS3220-Project2/Multiplexer.v
+Z90 FD:/Desktop/CS3220-Project2/Multiplexer.v
+L0 1
+R7
+r1
+31
+R8
+Z91 n@multiplexer
+Z92 !s100 DoQjeDh>ER8WMVSXS`g`F1
+Z93 !s108 1478568630.800000
+Z94 !s107 D:/Desktop/CS3220-Project2/Multiplexer.v|
+Z95 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/Multiplexer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vProject2
+Z96 ILH54Sel1hCzSZ>1C<2Z7Y0
+Z97 VjM@<2;Pmnh8ldWbV^S9ST1
+R3
+R88
+Z98 8D:/Desktop/CS3220-Project2/Project2.v
+Z99 FD:/Desktop/CS3220-Project2/Project2.v
+L0 1
+R7
+r1
+31
+R8
+Z100 n@project2
+Z101 !s100 43i6c]_S:b?@7ZkWjZ]^h0
+Z102 !s108 1478568630.859000
+Z103 !s107 D:/Desktop/CS3220-Project2/Project2.v|
+Z104 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/Project2.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRegFile
+Z105 IReEO:]BNA=J]YBzVz=13V2
+Z106 VL7YF56dU^_k9dHRg1KO>R0
+R3
+R88
+Z107 8D:/Desktop/CS3220-Project2/RegFile.v
+Z108 FD:/Desktop/CS3220-Project2/RegFile.v
+L0 1
+R7
+r1
+31
+R8
+Z109 n@reg@file
+Z110 !s100 jQn?PnBmhii7G?JbamBdF1
+Z111 !s108 1478568630.920000
+Z112 !s107 D:/Desktop/CS3220-Project2/RegFile.v|
+Z113 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/RegFile.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRegister
+Z114 Ig6bc102?Cei[X]M892gmb2
+Z115 VcF=KTBfmNkUbE2U153[EE2
+R3
+R88
+Z116 8D:/Desktop/CS3220-Project2/Register.v
+Z117 FD:/Desktop/CS3220-Project2/Register.v
+L0 1
+R7
+r1
+31
+R8
+Z118 n@register
+Z119 !s100 4J^ND86^Qzak[kgHJ[dI_2
+Z120 !s108 1478568630.972000
+Z121 !s107 D:/Desktop/CS3220-Project2/Register.v|
+Z122 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/Register.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSevenSeg
+Z123 IoTJ7U[GJmb<1><FzXE7NR2
+Z124 VKZQ;?2zCF>`gI56YS>C7c1
+R3
+R88
+Z125 8D:/Desktop/CS3220-Project2/SevenSeg.v
+Z126 FD:/Desktop/CS3220-Project2/SevenSeg.v
+L0 1
+R7
+r1
+31
+R8
+Z127 n@seven@seg
+Z128 !s100 nAM=hdbj8=Ic9R=@=R8F61
+Z129 !s108 1478568631.023000
+Z130 !s107 D:/Desktop/CS3220-Project2/SevenSeg.v|
+Z131 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/SevenSeg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSignExtension
+Z132 IU`=1S1[k?EEW]`ziSYk7N1
+Z133 V4dfZnVj2jB=k4[_jW314B1
+R3
+R88
+Z134 8D:/Desktop/CS3220-Project2/SignExtension.v
+Z135 FD:/Desktop/CS3220-Project2/SignExtension.v
+L0 1
+R7
+r1
+31
+R8
+Z136 n@sign@extension
+Z137 !s100 [U8m`SWj3797d;S4mg`A<1
+Z138 !s108 1478568631.078000
+Z139 !s107 D:/Desktop/CS3220-Project2/SignExtension.v|
+Z140 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/SignExtension.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTestAdder
+Z141 IU@h812a:HgD6_UHO;TRLU0
+Z142 Vzo<eNM:UCCQ:h6U]mdmVm3
+R3
+R88
+Z143 8D:/Desktop/CS3220-Project2/TestAdder.v
+Z144 FD:/Desktop/CS3220-Project2/TestAdder.v
+L0 2
+R7
+r1
+31
+R8
+Z145 n@test@adder
+Z146 !s100 NzPMTia:<HU^TJXQJ>P4Q0
+Z147 !s108 1478568631.145000
+Z148 !s107 D:/Desktop/CS3220-Project2/TestAdder.v|
+Z149 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/TestAdder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTestALU
+Z150 IH0LnULM<Oz?_9kVgFJ_YG2
+Z151 VaX;@:Gf9e=_GR>85al6he1
+R3
+Z152 w1478572943
+Z153 8D:/Desktop/CS3220-Project2/TestALU.v
+Z154 FD:/Desktop/CS3220-Project2/TestALU.v
+L0 2
+R7
+r1
+31
+Z155 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/TestALU.v|
+R8
+Z156 n@test@a@l@u
+!i10b 1
+Z157 !s100 Ge:KGYT3K9ad6bEk]Y6O10
+!s85 0
+Z158 !s108 1478573314.288000
+Z159 !s107 D:/Desktop/CS3220-Project2/TestALU.v|
+!s101 -O0
+vTestBranchPicker
+Z160 ImjROTM`T^oZg^TVYeZ7hM0
+Z161 VYNl>C7@mBkOo[K]bA<9=H2
+R3
+R88
+Z162 8D:/Desktop/CS3220-Project2/TestBranchPicker.v
+Z163 FD:/Desktop/CS3220-Project2/TestBranchPicker.v
+L0 2
+R7
+r1
+31
+R8
+Z164 n@test@branch@picker
+Z165 !s100 4;9KbFnkad1fPg=B:QEVI1
+Z166 !s108 1478568631.263000
+Z167 !s107 D:/Desktop/CS3220-Project2/TestBranchPicker.v|
+Z168 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/TestBranchPicker.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTestController
+!i10b 1
+!s100 UIYWA^Z:a]zef[@BZ`ET23
+IBcNKRCa[nDNVaE3j8=S8H1
+Z169 VN;eVO<DTfY=NYF06nA5>H2
+R3
+w1478575295
+Z170 8D:/Desktop/CS3220-Project2/TestController.v
+Z171 FD:/Desktop/CS3220-Project2/TestController.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1478575329.559000
+!s107 D:/Desktop/CS3220-Project2/TestController.v|
+Z172 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/TestController.v|
+!s101 -O0
+R8
+Z173 n@test@controller
+vTestLeftShift
+Z174 I3dLDDjH2l<WD0=:U=PbN_3
+Z175 ViQjhm7YJg[28gTzCdoLX93
+R3
+R88
+Z176 8D:/Desktop/CS3220-Project2/TestLeftShift.v
+Z177 FD:/Desktop/CS3220-Project2/TestLeftShift.v
+L0 2
+R7
+r1
+31
+R8
+Z178 n@test@left@shift
+Z179 !s100 L_cAZWP7CKZBZGA4ZGzKV2
+Z180 !s108 1478568631.375000
+Z181 !s107 D:/Desktop/CS3220-Project2/TestLeftShift.v|
+Z182 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/TestLeftShift.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTestMultiplexer
+Z183 IY0`V[45C:noCBN[nAW@G10
+Z184 VEQb^4O^RB0TX`cO=a2[Di1
+R3
+R88
+Z185 8D:/Desktop/CS3220-Project2/TestMultiplexer.v
+Z186 FD:/Desktop/CS3220-Project2/TestMultiplexer.v
+L0 2
+R7
+r1
+31
+R8
+Z187 n@test@multiplexer
+Z188 !s100 4h76<05SL1GOh0EU5Enjj3
+Z189 !s108 1478568631.430000
+Z190 !s107 D:/Desktop/CS3220-Project2/TestMultiplexer.v|
+Z191 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/TestMultiplexer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTestProject2
+Z192 Ig8[]W6M_JP`UInIoD@G7F1
+Z193 V17CIQC1a[=::SKe2^Mg[f2
+R3
+R88
+Z194 8D:/Desktop/CS3220-Project2/TestProject2.v
+Z195 FD:/Desktop/CS3220-Project2/TestProject2.v
+L0 2
+R7
+r1
+31
+R8
+Z196 n@test@project2
+Z197 !s100 =O?lO33C5e>lcVGUl0SF^2
+Z198 !s108 1478568631.484000
+Z199 !s107 D:/Desktop/CS3220-Project2/TestProject2.v|
+Z200 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/TestProject2.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTestRegFile
+Z201 I_VHnCiAEY;:?Jg_BC;?hB2
+Z202 Vn^<C?NDgmonj^RVQU``P31
+R3
+R88
+Z203 8D:/Desktop/CS3220-Project2/TestRegFile.v
+Z204 FD:/Desktop/CS3220-Project2/TestRegFile.v
+L0 2
+R7
+r1
+31
+R8
+Z205 n@test@reg@file
+Z206 !s100 j>]Z>]91mXR[>L=UEG[]13
+Z207 !s108 1478568631.537000
+Z208 !s107 D:/Desktop/CS3220-Project2/TestRegFile.v|
+Z209 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/TestRegFile.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTestRegister
+Z210 I]0Bjh6OQ0<9oi2=mZg_md2
+Z211 V0mE7jW_b8@M?`GkUH`Z0E2
+R3
+Z212 w1478557138
+Z213 8D:/Desktop/CS3220-Project2/TestRegister.v
+Z214 FD:/Desktop/CS3220-Project2/TestRegister.v
+L0 2
+R7
+r1
+31
+R8
+Z215 n@test@register
+Z216 !s100 mMVcddfJTBahVgGJ_:AKn1
+Z217 !s108 1478568631.591000
+Z218 !s107 D:/Desktop/CS3220-Project2/TestRegister.v|
+Z219 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/TestRegister.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTestSignExtension
+Z220 I8JWGOI^;>SiaJVTSdf9@C0
+Z221 V0Nc4VM?GK2DZ`oe^N<cNP2
+R3
+R88
+Z222 8D:/Desktop/CS3220-Project2/TestSignExtension.v
+Z223 FD:/Desktop/CS3220-Project2/TestSignExtension.v
+L0 2
+R7
+r1
+31
+R8
+Z224 n@test@sign@extension
+Z225 !s100 mgVG8K6nEAd>mO>eBB]I82
+Z226 !s108 1478568631.643000
+Z227 !s107 D:/Desktop/CS3220-Project2/TestSignExtension.v|
+Z228 !s90 -reportprogress|300|-work|work|D:/Desktop/CS3220-Project2/TestSignExtension.v|
+!i10b 1
+!s85 0
+!s101 -O0

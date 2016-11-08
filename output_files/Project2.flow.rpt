@@ -1,5 +1,5 @@
 Flow report for Project2
-Wed Nov 02 22:16:24 2016
+Mon Nov 07 22:40:13 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +-------------------------------------+-------------------------------------------------+
-; Flow Status                         ; Successful - Wed Nov 02 22:16:24 2016           ;
+; Flow Status                         ; Successful - Mon Nov 07 22:40:13 2016           ;
 ; Quartus II 64-Bit Version           ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                       ; Project2                                        ;
 ; Top-level Entity Name               ; Project2                                        ;
@@ -69,42 +69,42 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/02/2016 22:04:11 ;
+; Start date & time ; 11/07/2016 22:33:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Project2            ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                ;
-+--------------------------------------+---------------------------+---------------+-------------+----------------+
-; Assignment Name                      ; Value                     ; Default Value ; Entity Name ; Section Id     ;
-+--------------------------------------+---------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 622311904.147813865115628 ; --            ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                        ; --            ; --          ; TestProject2   ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TestProject2              ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl               ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog) ; <None>        ; --          ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE           ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                  ; TestProject2.v            ; --            ; --          ; TestProject2   ;
-; EDA_TEST_BENCH_MODULE_NAME           ; TestProject2              ; --            ; --          ; TestProject2   ;
-; EDA_TEST_BENCH_NAME                  ; TestProject2              ; --            ; --          ; eda_simulation ;
-; EDA_TIME_SCALE                       ; 100 ns                    ; --            ; --          ; eda_simulation ;
-; ENABLE_DRC_SETTINGS                  ; On                        ; Off           ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                        ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                         ; --            ; --          ; --             ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing         ; --            ; --          ; --             ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing         ; --            ; --          ; --             ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                ; --            ; --          ; --             ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; 16764057                  ; --            ; DE0_CV      ; Top            ;
-; PARTITION_COLOR                      ; 16764057                  ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING     ; --            ; DE0_CV      ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING     ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                    ; --            ; DE0_CV      ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                    ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files              ; --            ; --          ; --             ;
-+--------------------------------------+---------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                     ;
++--------------------------------------+--------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                          ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+--------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 31366891840469.147857601312848 ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; TestProject2   ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TestProject2                   ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; TestProject2.v                 ; --            ; --          ; TestProject2   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; TestProject2                   ; --            ; --          ; TestProject2   ;
+; EDA_TEST_BENCH_NAME                  ; TestProject2                   ; --            ; --          ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 100 ns                         ; --            ; --          ; eda_simulation ;
+; ENABLE_DRC_SETTINGS                  ; On                             ; Off           ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                             ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                              ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing              ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing              ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                     ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                     ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; 16764057                       ; --            ; DE0_CV      ; Top            ;
+; PARTITION_COLOR                      ; 16764057                       ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING          ; --            ; DE0_CV      ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING          ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                         ; --            ; DE0_CV      ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                         ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                   ; --            ; --          ; --             ;
++--------------------------------------+--------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -112,13 +112,13 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:30     ; 1.0                     ; 541 MB              ; 00:00:29                           ;
-; Fitter                    ; 00:10:38     ; 1.0                     ; 1506 MB             ; 00:10:26                           ;
-; Assembler                 ; 00:00:10     ; 1.0                     ; 596 MB              ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:36     ; 1.0                     ; 1064 MB             ; 00:00:33                           ;
-; Design Assistant          ; 00:00:03     ; 1.0                     ; 516 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 518 MB              ; 00:00:03                           ;
-; Total                     ; 00:12:00     ; --                      ; --                  ; 00:11:41                           ;
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 533 MB              ; 00:00:15                           ;
+; Fitter                    ; 00:05:51     ; 1.0                     ; 1525 MB             ; 00:05:47                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 599 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:21     ; 1.0                     ; 1073 MB             ; 00:00:19                           ;
+; Design Assistant          ; 00:00:01     ; 1.0                     ; 513 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 521 MB              ; 00:00:01                           ;
+; Total                     ; 00:06:35     ; --                      ; --                  ; 00:06:28                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -127,12 +127,12 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; SteinsGate       ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; SteinsGate       ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; SteinsGate       ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; SteinsGate       ; Windows 7 ; 6.2        ; x86_64         ;
-; Design Assistant          ; SteinsGate       ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; SteinsGate       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; pjztam-desktop   ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; pjztam-desktop   ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; pjztam-desktop   ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; pjztam-desktop   ; Windows 7 ; 6.2        ; x86_64         ;
+; Design Assistant          ; pjztam-desktop   ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; pjztam-desktop   ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
